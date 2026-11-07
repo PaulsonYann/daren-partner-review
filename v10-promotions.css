@@ -1,0 +1,71 @@
+/* V10 4B: scoped compact promotion list; no changes to the KOL case tab. */
+.v10-promotions-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start;min-width:0}
+.v10-promotions-layout.has-detail{grid-template-columns:minmax(0,1fr) minmax(340px,420px)}
+.v10-promotions-main{container-type:inline-size;min-width:0;border:1px solid #dfe6f0;border-radius:10px;overflow:visible;background:#fff;box-shadow:none}
+.v10-promo-count{font-size:12px;line-height:20px;color:var(--muted);white-space:nowrap;margin-right:auto}
+.content .v10-promo-toolbar{display:flex;align-items:center;gap:8px;padding:16px 18px;flex-wrap:wrap;border:0}
+.content .v10-promo-toolbar .searchfield{flex:1 1 210px;min-width:180px;max-width:420px;width:auto;height:36px;min-height:36px;margin:0;border:1px solid #dce4ef;border-radius:6px}
+.v10-promo-toolbar .searchfield input{font:inherit;font-size:13px;min-width:0;width:100%}
+.v10-promo-toolbar .searchfield>svg{width:16px;height:16px;flex-shrink:0}
+.content .v10-promo-toolbar>select{font:inherit;font-size:13px;height:36px;min-height:36px;max-width:150px;padding:6px 9px;background:#fff;border:1px solid #dce4ef;border-radius:6px;color:#52647d}
+.v10-promo-toolbar-actions{display:flex;gap:8px;align-items:center;margin-left:auto;flex-shrink:0}
+.v10-promo-toolbar-actions .btn,.v10-promo-fields>summary{min-height:36px;padding:7px 11px;font-size:13px;line-height:20px;border-radius:6px;white-space:nowrap}
+.v10-promo-toolbar-actions .btn svg,.v10-promo-fields>summary svg{width:16px;height:16px;flex-shrink:0}
+.v10-promo-fields{position:relative;font-size:13px;color:#52647d}
+.v10-promo-fields>summary{display:flex;align-items:center;gap:6px;list-style:none;cursor:pointer;border:1px solid #dce4ef;background:white;box-sizing:border-box}
+.v10-promo-fields>summary::-webkit-details-marker{display:none}
+.v10-promo-fields>div{position:absolute;right:0;top:calc(100% + 7px);z-index:15;min-width:210px;padding:13px;background:#fff;border:1px solid #dce4ef;border-radius:8px;box-shadow:0 7px 22px #24355316}
+.v10-promo-fields strong{display:block;font-size:13px;margin:0 0 7px;color:#2d3d55}
+.v10-promo-fields label{display:flex;align-items:center;gap:8px;line-height:22px;padding:5px 0;cursor:pointer}
+.v10-promo-fields input{width:15px;height:15px;accent-color:var(--blue);margin:0}
+.v10-promo-fields small{font-size:11px;line-height:17px;display:block;color:#7a899e;margin-top:7px}
+.content .v10-promotions-main .v10-promo-table-scroll{max-width:100%;overflow:auto;margin:0 18px;border:1px solid #e0e6ef;border-radius:7px}
+.content .v10-promotions-main .v10-promo-table{border-collapse:collapse;table-layout:fixed;width:100%;min-width:610px;font-size:14px}
+.content .v10-promotions-main .v10-promo-table .promo-col-case{width:auto}.content .v10-promotions-main .v10-promo-table .promo-col-kol{width:20%}.content .v10-promotions-main .v10-promo-table .promo-col-platform{width:110px}.content .v10-promotions-main .v10-promo-table .promo-col-date{width:100px}.content .v10-promotions-main .v10-promo-table .promo-col-proof{width:92px}.content .v10-promotions-main .v10-promo-table .promo-col-actions{width:86px}
+.content .v10-promotions-main .v10-promo-table th{background:#f5f7fb;color:#56677f;font-size:13px;font-weight:600;line-height:20px;padding:13px 12px;text-align:left;white-space:nowrap;border-bottom:1px solid #e0e6ef}
+.content .v10-promotions-main .v10-promo-table td{padding:12px;vertical-align:middle;border-bottom:1px solid #e7ecf3;line-height:21px;overflow:hidden;overflow-wrap:anywhere;white-space:normal}
+.content .v10-promotions-main .v10-promo-table tbody tr:last-child td{border-bottom:0}
+.content .v10-promotions-main .v10-promo-table tbody tr{height:64px;cursor:default;background:#fff}
+.content .v10-promotions-main .v10-promo-table tbody tr:hover{background:#f8faff}.content .v10-promotions-main .v10-promo-table tbody tr.is-selected{background:#eaf2ff}
+.v10-promo-title{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-width:100%;overflow:hidden;padding:0;background:none;border:0;text-align:left;font:inherit;font-size:14px;line-height:22px;color:#273851;cursor:pointer;word-break:break-word}
+.v10-promo-title:hover,.is-selected .v10-promo-title{color:var(--blue)}
+.v10-promo-kol{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%;font-size:13px;line-height:21px;border:0;background:transparent;padding:0;text-align:left;color:inherit;cursor:pointer}
+.v10-promo-kol:hover{color:var(--blue)}
+.v10-promo-platform{display:flex;align-items:center;gap:7px;min-width:0;font-size:12px;line-height:18px}
+.v10-promo-platform>.v10brand{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;min-width:26px;min-height:26px;gap:0;overflow:hidden}
+.v10-promo-platform .v10brand img{width:24px;height:24px;max-width:24px;max-height:24px;object-fit:contain}
+.v10-promo-platform .v10brand-fallback{display:none}
+.v10-promo-platform .v10brand-unknown>svg{width:18px;height:18px}
+.v10-promo-platform .v10brand-unknown+span{overflow-wrap:anywhere}
+.v10-promo-date{font-size:12px;line-height:20px;white-space:nowrap;color:#56677f}.v10-promo-date small{display:block;font-size:12px;color:#7c899c;line-height:18px}
+.v10-promo-proof{display:inline-flex;align-items:center;gap:5px;font-size:12px;line-height:19px;color:var(--blue);white-space:normal}
+.v10-promo-proof svg{width:14px;height:14px;flex-shrink:0}.v10-promo-missing{font-size:12px;color:#8693a6;line-height:20px}
+.v10-promo-actions{display:flex;align-items:center;gap:6px;white-space:nowrap}.v10-promo-actions>.textbtn{font-size:13px;line-height:20px;padding:3px 0}
+.v10-promo-actions>.iconbtn{width:26px;height:28px;padding:5px;color:#74839a}.v10-promo-actions>.iconbtn svg{width:14px;height:14px}
+.v10-promo-empty{padding:48px 18px;text-align:center;font-size:14px;color:#7e8da3;line-height:22px}
+.v10-promo-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px;font-size:12px;color:#7b8a9e}
+.v10-promo-footer nav{display:flex;align-items:center;gap:12px;line-height:20px}.v10-promo-footer nav>.iconbtn{width:32px;height:32px;border:1px solid #e0e6ef;border-radius:6px;color:#526b8e;padding:8px}
+.v10-promo-footer nav>.iconbtn svg{width:14px;height:14px}.v10-promo-footer [data-promo-page="-1"] svg{transform:rotate(180deg)}
+.v10-promo-footer nav>.iconbtn:disabled{opacity:.4;cursor:default}
+.v10-promotions-layout :is(button,a,summary,select,input):focus-visible,.content .v10-promotions-main .v10-promo-table-scroll:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (max-width:1400px){.v10-promotions-layout.has-detail{grid-template-columns:minmax(0,1fr) 360px}.v10-promotions-layout.has-detail .v10-promo-toolbar .searchfield{max-width:none}.v10-promotions-layout.has-detail .v10-promo-toolbar-actions{margin-left:auto}.content .v10-promotions-main .v10-promo-table th,.content .v10-promotions-main .v10-promo-table td{padding-left:10px;padding-right:10px}}
+@media (max-width:1100px){.v10-promotions-layout.has-detail{grid-template-columns:minmax(0,1fr) 340px}}
+@media (max-width:900px){.v10-promotions-layout.has-detail{grid-template-columns:minmax(0,1fr)}.content .v10-promo-toolbar .searchfield{max-width:none}.v10-promo-toolbar-actions{margin-left:auto}}
+@media (max-width:560px){.content .v10-promo-toolbar{padding:12px;gap:8px}.content .v10-promo-toolbar .searchfield{flex-basis:100%;min-width:0}.content .v10-promo-toolbar>select{flex:1;max-width:none;min-width:0}.v10-promo-toolbar-actions{width:100%;justify-content:flex-end;flex-wrap:wrap}.content .v10-promotions-main .v10-promo-table-scroll{margin:0 12px}.v10-promo-footer{padding:14px 12px;gap:10px}.v10-promo-footer nav{gap:9px}.content .v10-promotions-main .v10-promo-table{min-width:610px}}
+@container (max-width:650px){
+ .content .v10-promotions-main .v10-promo-table{display:block;min-width:0;width:100%;table-layout:auto}
+ .content .v10-promotions-main .v10-promo-table colgroup,.content .v10-promotions-main .v10-promo-table thead{display:none}
+ .content .v10-promotions-main .v10-promo-table tbody{display:block;width:100%}
+ .content .v10-promotions-main .v10-promo-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px 12px;padding:13px 12px;height:auto;border-bottom:1px solid #e7ecf3}
+ .content .v10-promotions-main .v10-promo-table tbody tr:last-child{border-bottom:0}
+ .content .v10-promotions-main .v10-promo-table td{display:block;padding:0;border:0;min-width:0}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="case"],.content .v10-promotions-main .v10-promo-table td[data-promo-cell="kol"]{grid-column:1/-1}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="kol"]{display:flex;align-items:baseline;gap:6px;color:#76859a}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="kol"]:before{content:'KOL';font-size:12px;flex-shrink:0}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="date"]{text-align:right}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="actions"]{grid-column:2;justify-self:end;align-self:center}
+ .content .v10-promotions-main .v10-promo-table td[data-promo-cell="proof"]{align-self:center}
+ .v10-promo-date small{display:inline;margin-left:5px}
+ .v10-promo-title{font-size:14px;line-height:22px;-webkit-line-clamp:2}
+ .v10-promo-actions>.iconbtn{width:28px}
+}

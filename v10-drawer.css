@@ -1,0 +1,54 @@
+/* Current blue KOL drawer, deliberately shared across all three tabs. */
+/* Keep the drawer opaque when WebKit pauses a background tab animation. */
+.drawer.v10-kol-drawer{animation:none}
+.drawer.v10-kol-drawer{--v10-drawer-pad:28px;display:flex;flex-direction:column;width:50vw;min-width:680px;max-width:100vw;height:100dvh;overflow:hidden;background:#fff}
+.v10-kol-drawer>.drawerbody{display:flex;flex-direction:column;flex:1;min-height:0;padding:0;overflow:auto;overscroll-behavior:contain}
+.v10-kol-drawer[data-v10-tab=info]>.drawerbody,.v10-kol-drawer[data-v10-tab=follow]>.drawerbody{overflow:hidden}
+.v10-kol-drawer .v10-drawer-head{flex:0 0 auto;position:relative;margin:0;padding:0 var(--v10-drawer-pad);border-bottom:1px solid var(--v9line);background:#fff}
+.v10-kol-drawer .v10-drawer-head .v10-drawer-close{position:absolute;top:10px;right:var(--v10-drawer-pad);width:32px;height:32px;min-height:32px;padding:7px;border-radius:5px;color:var(--v9muted)}
+.v10-kol-drawer .v10-drawer-head .v10-drawer-close:hover{color:var(--v9accent);background:var(--v9soft)}
+.v10-kol-drawer .v10-drawer-head .v10-drawer-close svg{width:18px;height:18px}
+.v10-kol-drawer .v10-drawer-head .v10-identity{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:14px;align-items:center;min-height:99px;padding:18px 40px 14px 0;margin:0;border:0;position:static}
+.v10-kol-drawer .v10-identity>.avatar{width:48px;height:48px;min-width:48px;flex-basis:48px;font-size:22px;line-height:1}
+.v10-kol-drawer .v10-identity-content{min-width:0}
+.v10-kol-drawer .v10-identity-line{display:flex;flex-wrap:wrap;align-items:center;gap:5px 8px;min-width:0}
+.v10-kol-drawer .v10-identity-name{display:block;position:relative;min-width:0;max-width:100%;min-height:28px;margin:0;padding:0;border:0;font-size:20px;font-weight:650;line-height:28px;overflow-wrap:anywhere}
+.v10-kol-drawer .v10-identity .v10-identity-name .v8display{min-height:28px;padding:0 25px 0 0;font-size:20px;font-weight:650;line-height:28px;overflow-wrap:anywhere}
+.v10-kol-drawer .v10-drawer-head .v10-identity .v10-identity-name{margin:0;letter-spacing:normal}
+.v10-kol-drawer .v9profile-section h3,.v10-kol-drawer .v10-follow-section-head h3,.v10-kol-drawer .v10-cases-toolbar h2{font-size:15px;line-height:23px;font-weight:650}
+.v10-kol-drawer .v10-name-readonly{padding-right:25px}
+.v10-kol-drawer .v10-identity-name .v8fieldhead{position:absolute;right:0;top:0;width:24px;min-height:0;margin:0}
+.v10-kol-drawer .v10-identity-name .v8fieldhead label{display:none}
+.v10-kol-drawer .v10-identity-name .v8editor input{width:100%;min-width:120px;height:32px;min-height:32px;font-size:16px}
+.v10-kol-drawer .v10-identity .v9identity-tags{display:flex;align-items:center;flex-wrap:wrap;gap:7px;width:auto;min-height:28px;margin:0;padding:0}
+.v10-kol-drawer .v10-identity .v9attribute{display:none}
+.v10-kol-drawer .v10-identity .v9identity-tags .badge{font-size:12px;line-height:20px;padding:3px 8px;white-space:nowrap}
+.v10-kol-drawer .v10-stage-static{display:flex;align-items:center;min-height:26px;padding-right:24px}
+.v10-kol-drawer .v10-identity .v9identity-meta{display:block;margin-top:5px;font-size:12px;font-weight:400;line-height:18px;color:var(--v9muted);overflow-wrap:anywhere}
+.v10-kol-drawer .v10-identity>.v9drawer-quick{display:flex;align-items:center;align-self:center;flex-wrap:nowrap;gap:7px;position:static;margin:0;padding:0;min-width:0}
+.v10-kol-drawer .v10-drawer-head .v9drawer-quick .btn{height:34px;min-height:34px;padding:6px 11px;font-size:13px;line-height:20px;font-weight:500;white-space:nowrap;border-color:var(--v9accent);color:var(--v9accent)}
+.v10-kol-drawer .v10-drawer-head .v9drawer-quick .btn.primary{background:var(--v9accent);color:#fff}
+.v10-kol-drawer .v10-drawer-head .drawer-tabs{display:flex;gap:28px;margin:0;padding:0;border:0;min-height:44px}
+.v10-kol-drawer .v10-drawer-head .drawer-tabs button{margin:0;padding:11px 0;font-size:14px;font-weight:500;line-height:20px;border-radius:0}
+.v10-kol-drawer .v10-drawer-head .drawer-tabs button.active{font-weight:650}
+.v10-kol-drawer .v10-drawer-head button:focus-visible,.v10-kol-drawer [role=tabpanel] button:focus-visible{outline:2px solid var(--v9accent);outline-offset:3px}
+.v10-kol-drawer .v9profile-scroll{padding-left:var(--v10-drawer-pad);padding-right:var(--v10-drawer-pad);scroll-padding:16px}
+.v10-kol-drawer .profilebar{padding-left:var(--v10-drawer-pad);padding-right:var(--v10-drawer-pad)}
+.v10-kol-drawer .profilebar{flex-wrap:wrap}
+.v10-kol-drawer .profilebar #profileerror:empty{display:none}
+.v10-kol-drawer .profilebar #profileerror:not(:empty){flex:0 0 100%;margin:0;padding:0;font-size:12px;line-height:19px;max-height:76px;overflow:auto;overflow-wrap:anywhere;color:#b83242}
+.v10-kol-drawer .profile-email-hint{display:block;margin-top:5px;font-size:12px;line-height:19px;color:var(--v9muted)}
+.v10-kol-drawer .v10-drawer-empty{margin:6px 0 0;font-size:13px;line-height:21px}
+.v10-kol-drawer .v9profile-scroll>.history+#kolfees{border-top:0;margin-top:0;padding-top:14px}
+/* One compact square for each product, in both display and native multi-select. */
+.v10-kol-drawer .v9products{gap:6px}
+.v10-kol-drawer.v9profile-drawer .v9products .v10-product-summary,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip>span{box-sizing:border-box;flex:0 0 36px;width:36px;min-width:36px;max-width:36px;height:36px;min-height:36px;padding:6px;overflow:hidden}
+.v10-kol-drawer .v10-product-summary .v10brand,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .v10brand{box-sizing:border-box;flex:0 0 22px;width:22px;min-width:0;height:22px;min-height:0;padding:0;overflow:hidden}
+.v10-kol-drawer .v10-product-summary .v10brand>img,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .v10brand>img{object-fit:contain}
+/* The retained official knot SVG has a half-width artwork area inside its viewBox. */
+.v10-kol-drawer .v10-product-summary .brand-chatgpt>img,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .brand-chatgpt>img{flex:0 0 44px;width:44px;height:44px;max-width:none;max-height:none}
+.v10-kol-drawer .v10-product-summary .brand-disneyplus,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .brand-disneyplus{padding:2px}
+.v10-kol-drawer .v10-product-summary .v10brand-unknown,.v10-kol-drawer .v10-product-summary .v10brand-failed,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .v10brand-unknown,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .v10brand-failed{flex-basis:100%;width:100%;height:100%;min-width:0;min-height:0;max-width:100%;gap:0}
+.v10-kol-drawer .v10-product-summary .v10brand-fallback,.v10-kol-drawer .v10-brand-choices[data-brand-kind=product] .checkchip .v10brand-fallback{font-size:9px;line-height:11px;overflow-wrap:anywhere;text-align:center}
+@media(max-width:1100px){.drawer.v10-kol-drawer{width:70vw;min-width:620px}}
+@media(max-width:700px){.drawer.v10-kol-drawer{--v10-drawer-pad:18px;width:96vw;min-width:0}.v10-kol-drawer .v10-drawer-head .v10-identity{grid-template-columns:42px minmax(0,1fr);gap:10px;min-height:0;padding:14px 40px 14px 0}.v10-kol-drawer .v10-identity>.avatar{width:42px;height:42px;min-width:42px}.v10-kol-drawer .v10-identity>.v9drawer-quick{grid-column:2;margin-left:0;flex-wrap:wrap}.v10-kol-drawer .v10-identity-name,.v10-kol-drawer .v10-identity .v10-identity-name .v8display{font-size:18px;line-height:26px}.v10-kol-drawer .v10-drawer-head .drawer-tabs{gap:24px}}

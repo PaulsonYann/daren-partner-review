@@ -1,0 +1,456 @@
+{
+  "准备日期": "2026-11-01",
+  "品牌数": 17,
+  "使用位置数": 18,
+  "说明": "17个品牌，YouTube用于两处独立字段；含ChatGPT备选字标。仅最终官网/CDN/Simple Icons来源资产。",
+  "素材数": 18,
+  "共用要求": [
+    "SVG 以 img 引用，保持原比例，不套主题色滤镜、不替换品牌填充；选中态的蓝边/浅底位于外部容器。",
+    "品牌使用说明与图标库许可单独溯源；CC0 不代表取得任何商标权。",
+    "所有最终候选均为本地自包含 SVG；不依赖外部字体、脚本、远程图像或网络请求。"
+  ],
+  "品牌": [
+    {
+      "品牌": "WhatsApp",
+      "文件": "whatsapp.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/whatsapp.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand",
+      "品牌规范": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand",
+      "颜色": "#25D366",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "8fb209a53a61618c3483594b3e070481a35575d6aaecbe00a6fe386670c8fb1c",
+      "本地SHA256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "字节": 1231
+    },
+    {
+      "品牌": "LINE",
+      "文件": "line.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/line.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://line.me/en/logo",
+      "品牌规范": "https://line.me/en/logo",
+      "颜色": "#00C300",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "b62430462354f95914536d7205128647d5563cdb805bc9aca000300aaed816c8",
+      "本地SHA256": "b33b86ee7c335abcccb12c08188823d40eb3ddc9521362ac94d9d9c55077db68",
+      "字节": 1191
+    },
+    {
+      "品牌": "WeChat",
+      "文件": "wechat.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/wechat.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://wechat.design/tool/brand",
+      "品牌规范": "https://wechat.design/brand/main-brand",
+      "颜色": "#07C160",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "74b48b3d315337ce79cb644933b5f975e19996f564fcc4138ed67d45674c43ca",
+      "本地SHA256": "439de170dff232935f08357fbfb852bb302545d6125861ed6074fe6237b3f912",
+      "字节": 1345
+    },
+    {
+      "品牌": "YouTube",
+      "文件": "youtube.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/youtube.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+      "品牌规范": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+      "颜色": "#FF0000",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c",
+      "本地SHA256": "7f5156448b9c1b65156e34e4443f0eff8b85f5afa783fc8a8d09f49380fed424",
+      "字节": 474
+    },
+    {
+      "品牌": "Instagram",
+      "文件": "instagram.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/instagram.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://about.meta.com/brand/resources/instagram",
+      "品牌规范": "https://about.meta.com/brand/resources/instagram",
+      "颜色": "#FF0069",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "f53af2d1fc5292ba1433b5c1faf50005ce6a997fa302d1816989929f379a59dc",
+      "本地SHA256": "1060526807a40fb7c1fcd06fa720865d295a9dc58f409660c716ec16bf06421e",
+      "字节": 2116
+    },
+    {
+      "品牌": "TikTok",
+      "文件": "tiktok.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/tiktok.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://tiktok.com",
+      "品牌规范": null,
+      "颜色": "#000000",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "6f54ac8d325faacea8935bdc44cbed60206a6b408641799e5fea1cba7c1a0af7",
+      "本地SHA256": "474e542d15b871647fb7b1f7eeeebf899de7de7577c43dc9005c4ac82e2fa4a9",
+      "字节": 722
+    },
+    {
+      "品牌": "Facebook",
+      "文件": "facebook.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/facebook.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://about.meta.com/brand/resources/facebook/logo",
+      "品牌规范": "https://about.meta.com/brand/resources/facebook/logo",
+      "颜色": "#0866FF",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "b06d18d844ed621b89faffb1a33440cc0ec4f1ffea9f36191f50db19a47c59a6",
+      "本地SHA256": "daf5a4fff42cb6b9868b7eb61a9f742663cc128d929d37c85873b8b10eaa345a",
+      "字节": 557
+    },
+    {
+      "品牌": "X",
+      "文件": "x.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/x.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://x.com",
+      "品牌规范": "https://about.x.com/en/who-we-are/brand-toolkit",
+      "颜色": "#000000",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "693e68863eceb8dc9f72e2acd386ab9c20a10858dab2c076212f7084cb7a32fe",
+      "本地SHA256": "07099f0e2eea46fe8cef6a2422dee63e1aa98c3cab07f3edf9a0b333314f758b",
+      "字节": 314
+    },
+    {
+      "品牌": "Telegram",
+      "文件": "telegram.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/telegram.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://telegram.org/tour/screenshots",
+      "品牌规范": null,
+      "颜色": "#26A5E4",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "147fd8f8923e7e5f463fe98c0eb9913bead6b2ae59935728cda141002ec8a7c9",
+      "本地SHA256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "字节": 757
+    },
+    {
+      "品牌": "VK",
+      "文件": "vk.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/vk.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://vk.com/brand",
+      "品牌规范": "https://vk.com/brand",
+      "颜色": "#0077FF",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "2d8fae863c9fdf5937f49326708dcf6cff0f5617ee67b502776b426bbe2cace8",
+      "本地SHA256": "84a5b49cf1678a7e370935db87a836974a8054774a5968c5355b76dbcedd9713",
+      "字节": 1293
+    },
+    {
+      "品牌": "Netflix",
+      "文件": "netflix.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/netflix.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://brand.netflix.com/en/assets/logos",
+      "品牌规范": "https://brand.netflix.com/en/assets/logos",
+      "颜色": "#E50914",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "67dbc495988bd5667a09ed4f56e14db4070a44c7a74e297b146c229f70fd6f6e",
+      "本地SHA256": "76b63a30adeb0eb51039fd6a4d783e806fb002aaa6a8ac9218afe8a620bff678",
+      "字节": 291
+    },
+    {
+      "品牌": "Spotify",
+      "文件": "spotify.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/spotify.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo",
+      "品牌规范": "https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo",
+      "颜色": "#1ED760",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "b9ec9bec7769c35643981586d6ea0d675aaf3871b32f8a291bcac7a87fff0bc1",
+      "本地SHA256": "366bb7f8086dd7c7e0d9edc4c54b0b47fd3b003f6d10a04d83c4ccff8e6f4bf5",
+      "字节": 712
+    },
+    {
+      "品牌": "Perplexity",
+      "文件": "perplexity.svg",
+      "来源类型": "Simple Icons 官方 GitHub 固定提交",
+      "上游URL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/perplexity.svg",
+      "固定提交": "90646e4bf7f3b89df6c37e65baf3e7bc759a517c",
+      "品牌来源": "https://www.perplexity.ai",
+      "品牌规范": null,
+      "颜色": "#1FB8CD",
+      "加工": "仅设置官方元数据品牌色 fill；保留原 SVG 几何",
+      "许可": "CC0-1.0（图标库贡献）；商标权及品牌使用规范仍适用",
+      "许可URL": "https://github.com/simple-icons/simple-icons/blob/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/LICENSE.md",
+      "上游SHA256": "57220c29378ce5e615e7244d2fdfcf5a44fad40dad81a99f2e0e4260c726ca74",
+      "本地SHA256": "407ad1254700503eb124ef5650cc267d83c79dc6dea9e9332fbdc92bb2bdf262",
+      "字节": 633
+    },
+    {
+      "品牌": "ChatGPT",
+      "文件": "chatgpt.svg",
+      "来源类型": "品牌官方公开网站／CDN",
+      "来源页面": "https://openai.com/brand/",
+      "上游URL": "https://cdn.openai.com/brand/openai-logos.zip",
+      "加工": "原样保留 SVG 几何与颜色",
+      "许可": "官方品牌素材；品牌使用说明 https://openai.com/brand/#usage-terms",
+      "上游SHA256": "75c1e9fffa5e8c437bec1d67197a73992bca45d166c6ff23215185dea8fae92a",
+      "本地SHA256": "75c1e9fffa5e8c437bec1d67197a73992bca45d166c6ff23215185dea8fae92a",
+      "字节": 2415,
+      "集成注意": [
+        "来自官方压缩包 OpenAI-logos/SVGs/OAI_OpenAI-Blossom_Black.svg，为 OpenAI Blossom 标志；ChatGPT 产品展示须保留产品名称的可访问标签，不能冒称独有 ChatGPT 字标。",
+        "原文件含较大内置留白；不裁切官方几何。另备官网 ChatGPT 字标 chatgpt-wordmark.svg。",
+        "保留黑色，不随主题染色。"
+      ]
+    },
+    {
+      "品牌": "Canva",
+      "文件": "canva.svg",
+      "来源类型": "品牌官方公开网站／CDN",
+      "来源页面": "https://www.canva.com/newsroom/",
+      "上游URL": "https://www.canva.com/newsroom/（页头 Canva home 的 SVG data URI）",
+      "加工": "仅将官方 HTML 中原样 SVG data URI 解码为独立文件；未修改 SVG 字节",
+      "许可": "官方品牌素材；使用说明 https://canvacreative.team/brand-logo",
+      "上游SHA256": "5e48f562e0092f87465bba3c3b54f3334a5c2dc442c16c0639c1a95951a79622",
+      "本地SHA256": "5e48f562e0092f87465bba3c3b54f3334a5c2dc442c16c0639c1a95951a79622",
+      "字节": 4056,
+      "集成注意": [
+        "原样导出官网页头内嵌渐变 SVG；保留全部内部渐变和比例。",
+        "品牌说明 https://canvacreative.team/brand-logo；只在现有内部系统识别产品，不表达联名、合作或背书。"
+      ]
+    },
+    {
+      "品牌": "Disney+",
+      "文件": "disneyplus.svg",
+      "来源类型": "品牌官方公开网站／CDN",
+      "来源页面": "https://www.disneyplus.com/",
+      "上游URL": "https://cdn.registerdisney.go.com/v4/asset/bundler/DISNEYPLUS/v4/images/v1/disneyplus-logo.svg",
+      "加工": "原样保留 SVG 几何与颜色",
+      "许可": "官方品牌素材；未声明为开源或 CC0",
+      "上游SHA256": "c8da5e13505493bcc0e7a5f6ab863efac11bed63dfe06a310ea434b494b1817f",
+      "本地SHA256": "c8da5e13505493bcc0e7a5f6ab863efac11bed63dfe06a310ea434b494b1817f",
+      "字节": 10068,
+      "集成注意": [
+        "原样白色透明标志；必须放在有对比度的深色品牌容器，不能在白底上裸放。",
+        "官方网页 mask-icon 同页定义品牌色 #136878，可用于容器背景；未对原 Logo 改色。"
+      ]
+    },
+    {
+      "品牌": "Gamma",
+      "文件": "gamma.svg",
+      "来源类型": "品牌官方公开网站／CDN",
+      "来源页面": "https://brand.gamma.app/",
+      "上游URL": "https://cdn.gamma.app/gdwwhyewwldwc8z/e8a5cedfa4b74512af84b7b5f00770ca/optimized/Gamma_Social_Avatar_Dark-2.svg",
+      "加工": "原样保留 SVG 几何与颜色",
+      "许可": "官方品牌素材；使用说明 https://brand.gamma.app/",
+      "上游SHA256": "7a2f360577074cd2905f4562ce6c1b0d54cc2d8f74484aea017add91797f5b28",
+      "本地SHA256": "7a2f360577074cd2905f4562ce6c1b0d54cc2d8f74484aea017add91797f5b28",
+      "字节": 1256,
+      "集成注意": [
+        "仅使用品牌页直接内嵌的官方 CDN 资源，不使用 Google Drive 材料。",
+        "保留官方圆角渐变底板和白色标志，圆角外透明；没有剥离属于 Logo 的底板或改成假透明纯字形。",
+        "本图为 40×40 头像型 Logo，适合紧凑识别；若产品要求全画布都无底板，使用普通文字 Gamma fallback，不能自行抠图。"
+      ]
+    }
+  ],
+  "补充素材": [
+    {
+      "品牌": "ChatGPT（补充字标）",
+      "文件": "chatgpt-wordmark.svg",
+      "来源类型": "品牌官方公开网站／CDN",
+      "来源页面": "https://chatgpt.com/",
+      "上游URL": "https://chatgpt.com/（页头 aria-label=\"ChatGPT\" 的内嵌 SVG）",
+      "加工": "去掉网页 class／注释、补标准 xmlns，将依赖网页 currentColor 的填充固定为官网黑色；保留所有路径",
+      "许可": "官方品牌素材；品牌使用说明 https://openai.com/brand/#usage-terms",
+      "上游SHA256": "945c50b7574aee968e044d4c5584ecb3b24179b27f273e475edd83370433f65a",
+      "本地SHA256": "9a0adef58f5324574642744c6cb1c89b2c6968bdfcc622bb4cd804b449bc064c",
+      "字节": 2789,
+      "集成注意": [
+        "ChatGPT 官网文字标志，保持 357:62 比例；可作为较宽产品卡片的替代标识。"
+      ]
+    }
+  ],
+  "本地校验": [
+    {
+      "文件": "canva.svg",
+      "SHA256": "5e48f562e0092f87465bba3c3b54f3334a5c2dc442c16c0639c1a95951a79622",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 80 30"
+    },
+    {
+      "文件": "chatgpt-wordmark.svg",
+      "SHA256": "9a0adef58f5324574642744c6cb1c89b2c6968bdfcc622bb4cd804b449bc064c",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 357 62"
+    },
+    {
+      "文件": "chatgpt.svg",
+      "SHA256": "75c1e9fffa5e8c437bec1d67197a73992bca45d166c6ff23215185dea8fae92a",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 716 716"
+    },
+    {
+      "文件": "disneyplus.svg",
+      "SHA256": "c8da5e13505493bcc0e7a5f6ab863efac11bed63dfe06a310ea434b494b1817f",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 736 402"
+    },
+    {
+      "文件": "facebook.svg",
+      "SHA256": "daf5a4fff42cb6b9868b7eb61a9f742663cc128d929d37c85873b8b10eaa345a",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "gamma.svg",
+      "SHA256": "7a2f360577074cd2905f4562ce6c1b0d54cc2d8f74484aea017add91797f5b28",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "40×40"
+    },
+    {
+      "文件": "instagram.svg",
+      "SHA256": "1060526807a40fb7c1fcd06fa720865d295a9dc58f409660c716ec16bf06421e",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "line.svg",
+      "SHA256": "b33b86ee7c335abcccb12c08188823d40eb3ddc9521362ac94d9d9c55077db68",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "netflix.svg",
+      "SHA256": "76b63a30adeb0eb51039fd6a4d783e806fb002aaa6a8ac9218afe8a620bff678",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "perplexity.svg",
+      "SHA256": "407ad1254700503eb124ef5650cc267d83c79dc6dea9e9332fbdc92bb2bdf262",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "spotify.svg",
+      "SHA256": "366bb7f8086dd7c7e0d9edc4c54b0b47fd3b003f6d10a04d83c4ccff8e6f4bf5",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "telegram.svg",
+      "SHA256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "tiktok.svg",
+      "SHA256": "474e542d15b871647fb7b1f7eeeebf899de7de7577c43dc9005c4ac82e2fa4a9",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "vk.svg",
+      "SHA256": "84a5b49cf1678a7e370935db87a836974a8054774a5968c5355b76dbcedd9713",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "wechat.svg",
+      "SHA256": "439de170dff232935f08357fbfb852bb302545d6125861ed6074fe6237b3f912",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "whatsapp.svg",
+      "SHA256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "x.svg",
+      "SHA256": "07099f0e2eea46fe8cef6a2422dee63e1aa98c3cab07f3edf9a0b333314f758b",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    },
+    {
+      "文件": "youtube.svg",
+      "SHA256": "7f5156448b9c1b65156e34e4443f0eff8b85f5afa783fc8a8d09f49380fed424",
+      "SVG解析": true,
+      "无外部引用": true,
+      "问题": [],
+      "尺寸": "0 0 24 24"
+    }
+  ],
+  "文字Fallback": {
+    "Gamma": "若不能保留官方头像底板，则显示普通文字 Gamma",
+    "未知历史品牌": "原值文字完整保留，禁止拼错归类或臆造 Logo"
+  },
+  "文件路径说明": "文件字段相对于本清单所在目录。"
+}

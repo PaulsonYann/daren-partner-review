@@ -58,6 +58,31 @@ function validate(data){
  if(data.next&&!validDate(data.next))return '下次跟进日期无效';
  return '';
 }
+// Fan counts use exact decimal arithmetic so a rounded display cannot cross a band.
+function parseFans(raw){
+ if(typeof raw!=='string'||raw.length>100)return {error:'粉丝数格式无效'};
+ const text=raw.trim();if(!text)return {value:'',number:null};
+ const match=text.match(/^((?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?)\s*([kKmM万]?)$/);if(!match)return {error:'粉丝数须为非负整数，可用K／M／万或千分位'};
+ const [integer,fraction='']=match[1].replace(/,/g,'').split('.'),numerator=BigInt(integer+fraction)*({k:1000n,m:1000000n,'万':10000n}[match[2].toLowerCase()]||1n),denominator=10n**BigInt(fraction.length);
+ if(numerator%denominator)return {error:'粉丝人数必须为整数，请修改后重试'};const value=numerator/denominator;if(value>BigInt(Number.MAX_SAFE_INTEGER))return {error:'粉丝数超出安全范围'};return {value:String(value),number:Number(value)};
+}
+function fansNumber(value){return parseFans(value??'').number??null}
+function fansEditor(value){const parsed=parseFans(value??'');return parsed.error?String(value??''):parsed.value}
+function fansDisplay(value){const parsed=parseFans(value??'');return parsed.error?String(value)+'（待核对）':parsed.value===''?'未填写':parsed.value.replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+function primaryFansAccount(k){return (k.accounts||[]).map((a,i)=>({...a,i,n:fansNumber(a.fans)})).filter(a=>a.n!==null).sort((a,b)=>b.n-a.n||a.i-b.i)[0]}
+function primaryFans(k){return primaryFansAccount(k)?.fans??k.fans??''}
+function fansIdentity(account){return account.platform+'|'+(profile(account.url,account.platform).key||account.url)}
+function fanAccountOrder(accounts,prior){const groups=new Map();for(const account of accounts){if(!groups.has(account.platform))groups.set(account.platform,[]);groups.get(account.platform).push(account)}const result=[];for(const old of prior){const group=groups.get(old.platform);if(group?.length)result.push(group.shift())}for(const group of groups.values())result.push(...group);return result}
+function preserveFansInput(raw,previous){return raw===fansEditor(previous)?previous:raw}
+function normalizeFans(data,prior={}){
+ const old=new Map((prior.accounts||[]).map(a=>[fansIdentity(a),a])),priorFans=prior.fans??'';
+ const normalize=(raw,previous)=>raw===previous?{value:raw}:parseFans(raw??'');
+ let result=normalize(data.fans??'',priorFans);if(result.error)return result.error;data.fans=result.value;
+ for(const account of data.accounts||[]){result=normalize(account.fans??'',old.get(fansIdentity(account))?.fans??'');if(result.error)return result.error;account.fans=result.value}
+ const signature=k=>JSON.stringify((k.accounts||[]).map(a=>[fansIdentity(a),a.fans??'']));
+ const primary=primaryFansAccount(data);if(primary&&(!prior.id||signature(data)!==signature(prior)||data.fans!==priorFans))data.fans=fansEditor(primary.fans);
+ return '';
+}
 function validDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(v))return false;const d=new Date(v+'T12:00:00Z');return Number.isFinite(d.getTime())&&d.toISOString().slice(0,10)===v;}
 function makeIndex(records,excludeId){let map=new Map();for(const k of records){if(k.id===excludeId)continue;for(const a of k.accounts||[]){const p=profile(a.url,a.platform);if(!p.error)map.set(p.key,{id:k.id,owner:k.owner||null});}}return map;}
 function collision(data,index,reserved=new Set()){
@@ -78,6 +103,8 @@ function parseCSV(text){
 }
 function csvCell(v){let s=String(v??'');if(/^[\s\u0000-\u001f]*[=+@-]/.test(s)||/^[\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';}
 function exportCSV(headers,rows){return '\uFEFF'+[headers,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');}
-const api={PLATFORMS,PRODUCTS,STAGES,unique,split,profile,guessPlatform,validate,validDate,makeIndex,collision,parseCSV,exportCSV};
+function primaryEmail(k){const emails=k?.emails||[];return emails.find(e=>e.purpose==='网站注册')?.address||emails.find(e=>e.purpose==='联盟营销')?.address||emails[0]?.address||''}
+function emailAddresses(k){const seen=new Set();return (k?.emails||[]).filter(e=>{const key=e.address.trim().toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true}).map(e=>e.address)}
+const api={primaryEmail,emailAddresses,parseFans,fansNumber,fansEditor,fansDisplay,primaryFansAccount,primaryFans,fansIdentity,fanAccountOrder,preserveFansInput,normalizeFans,PLATFORMS,PRODUCTS,STAGES,unique,split,profile,guessPlatform,validate,validDate,makeIndex,collision,parseCSV,exportCSV};
 if(typeof module!=='undefined')module.exports=api;else root.KOLCore=api;
 })(typeof window==='undefined'?{}:window);

@@ -1,0 +1,41 @@
+/* Promotion center detail uses its own scroll area; it never replaces the list. */
+.v10-promo-detail{position:sticky;top:16px;display:flex;flex-direction:column;min-width:0;max-height:calc(100vh - 112px);background:#fff;border:1px solid var(--line,#e5eaf2);border-radius:9px;color:var(--ink,#22324b);overflow:hidden}
+.v10-promo-detail-heading{display:flex;align-items:flex-start;gap:12px;padding:20px 18px 15px;flex-shrink:0}
+.v10-promo-detail-heading h2{margin:0;min-width:0;flex:1;font-size:20px;font-weight:650;line-height:1.45;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.v10-promo-detail-heading .iconbtn{width:30px;height:30px;display:grid;place-items:center;padding:5px;flex-shrink:0;border-radius:5px}
+.v10-promo-detail-heading .iconbtn:hover{background:#f3f6fb;color:#0756ed}
+.v10-promo-detail-heading .iconbtn svg{width:18px;height:18px}
+.v10-promo-detail-body{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 18px 16px;scrollbar-gutter:stable;outline-offset:-3px}
+.v10-promo-detail-group{margin:0 0 14px;border:0;padding:0}
+.v10-promo-detail-group summary{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;background:#f5f7fb;border-radius:5px;list-style:none;padding:9px 10px;min-height:38px}
+.v10-promo-detail-group summary::-webkit-details-marker{display:none}
+.v10-promo-detail-group summary h3{font-size:15px;line-height:20px;font-weight:600;padding-left:10px;border-left:3px solid #0756ed;margin:0}
+.v10-promo-detail-group summary>span{display:flex;color:#6b7a91}
+.v10-promo-detail-group summary svg{width:15px;height:15px;transform:rotate(90deg)}
+.v10-promo-detail-group[open] summary svg{transform:rotate(-90deg)}
+.v10-promo-detail-group dl{margin:8px 0 0;padding:0}
+.v10-promo-detail-field{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;padding:8px 0;font-size:14px;line-height:1.65}
+.v10-promo-detail-field dt{margin:0;color:#738199;font-size:13px}
+.v10-promo-detail-field dd{margin:0;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.v10-promo-detail-missing{color:#94a0b1}
+.v10-promo-detail-kol{display:flex;align-items:center;gap:8px;min-width:0}
+.v10-promo-detail-kol .avatar{width:29px;height:29px;font-size:13px}
+.v10-promo-detail-kol strong{font-size:14px;font-weight:550;overflow-wrap:anywhere;min-width:0}
+.v10-promo-detail-platform{display:flex;align-items:center;gap:7px}
+.v10-promo-detail-platform .v10brand{width:23px;height:23px;min-width:23px;flex:0 0 23px}
+.v10-promo-detail-platform .v10brand img{width:22px;height:22px}
+.v10-promo-detail-platform .v10brand-unknown{width:23px;height:23px;min-height:23px;max-height:23px;gap:0}
+.v10-promo-detail-platform .v10brand-unknown>.v10brand-fallback{display:none}
+.v10-promo-detail-platform .v10brand-unknown>svg{width:18px;height:18px;flex:0 0 18px}
+.v10-promo-detail-link{display:flex;align-items:flex-start;gap:6px;max-width:100%;color:#0756ed;white-space:normal;overflow-wrap:anywhere}
+.v10-promo-detail-link span{min-width:0;overflow-wrap:anywhere}
+.v10-promo-detail [data-casefield=url] .v10-promo-detail-link>span{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.v10-promo-detail-link svg{width:15px;height:15px;flex-shrink:0;margin-top:4px}
+.v10-promo-detail-link:hover span{text-decoration:underline}
+.v10-promo-detail-invalid small{display:block;font-size:12px;color:#8692a5}
+.v10-promo-detail-footer{border-top:1px solid var(--line,#e5eaf2);padding:13px 18px;background:#fff;flex-shrink:0}
+.v10-promo-detail-footer .btn{width:100%;height:36px;min-height:36px;font-size:14px;padding:7px 12px}
+.v10-promo-detail-footer .btn svg{width:17px;height:17px}
+.v10-promo-detail summary:focus-visible{outline:2px solid #0756ed;outline-offset:2px}
+@media(max-width:1300px){.v10-promotions-layout.has-detail{grid-template-columns:minmax(0,1fr)}.v10-promo-detail{position:fixed;z-index:12;right:18px;top:86px;bottom:auto;width:min(410px,calc(100vw - 36px));max-height:calc(100vh - 104px);box-shadow:0 10px 36px #223b6124}}
+@media(max-width:600px){.v10-promo-detail{top:78px;right:10px;width:calc(100vw - 20px);max-height:calc(100vh - 88px);border-radius:8px}.v10-promo-detail-heading{padding:16px 14px 12px}.v10-promo-detail-body{padding:0 14px 12px}.v10-promo-detail-footer{padding:12px 14px}.v10-promo-detail-field{grid-template-columns:78px minmax(0,1fr);gap:10px}.v10-promo-detail-heading h2{font-size:20px}}

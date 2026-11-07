@@ -1,0 +1,28 @@
+/* Compact cooperation cases: shared by the promotion center and KOL drawer. */
+.caseview{width:100%;max-width:100%;min-width:0}
+.caseview .caseview-tools{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:13px;line-height:20px}
+.caseview .caseview-tools .btn{min-height:36px;padding:7px 12px;font-size:13px;line-height:20px}
+.caseview .tablewrap{width:100%;max-width:100%;min-width:0;overflow:auto;overscroll-behavior-x:contain}
+.caseview .casetable{width:100%;min-width:740px;table-layout:fixed}
+.caseview .casetable th{padding:9px 10px;font-size:13px;line-height:20px;font-weight:500;white-space:nowrap}
+.caseview .casetable td{height:52px;min-width:0;max-width:none;padding:8px 10px;font-size:14px;line-height:22px;vertical-align:middle;white-space:pre-wrap;overflow-wrap:anywhere}
+.caseview .casetable tbody tr{cursor:default}
+.caseview .casetable .textbtn,.caseview .casetable a{font-size:14px;line-height:22px;white-space:normal;overflow-wrap:anywhere;text-align:left}
+.caseview .casetable a svg{width:14px;height:14px}
+.caseview .casetable .btn.small{min-height:36px;font-size:13px;line-height:20px;padding:7px 10px}
+.caseview [hidden]{display:none!important}
+.caseview:not(.is-expanded) [data-casefield=url]{width:26%}
+.caseview:not(.is-expanded) [data-casefield=platform]{width:12%}
+.caseview:not(.is-expanded) [data-casefield=date]{width:14%;white-space:nowrap}
+.caseview:not(.is-expanded) [data-casefield=customer]{width:16%}
+.caseview:not(.is-expanded) [data-casefield=views]{width:10%}
+.caseview:not(.is-expanded) [data-casefield=revenue]{width:13%}
+.caseview:not(.is-expanded) [data-casefield=actions]{width:9%}
+.caseview.is-expanded .casetable{min-width:2240px;table-layout:auto}
+.caseview.is-expanded .casetable td{min-width:94px;max-width:240px}
+.caseview.is-expanded [data-casefield=url],.caseview.is-expanded [data-casefield=remarks],.caseview.is-expanded [data-casefield=promotionInfo],.caseview.is-expanded [data-casefield=email]{min-width:180px}
+.caseview.is-expanded [data-casefield=date]{min-width:120px;white-space:nowrap}
+.caseview.is-expanded [data-casefield=customer]{min-width:160px}
+.caseview .empty{padding:24px 14px;font-size:14px;line-height:22px}
+.caseview button:focus-visible,.caseview a:focus-visible,.caseview .tablewrap:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.drawerbody>.caseview{margin-top:12px}

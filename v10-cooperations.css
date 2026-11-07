@@ -1,0 +1,87 @@
+/* Own-cooperation records and explicit-link editor: one compact blue drawer. */
+.v9contracts .toolbar .v10-cooperation-entry{order:3;margin-left:auto;font-size:13px;min-height:36px;white-space:nowrap;padding:7px 11px}
+.v10-cooperations-back{position:fixed;inset:0;z-index:90;background:#243b5a35;backdrop-filter:blur(3px);display:flex;justify-content:flex-end}
+.v10-cooperations{width:min(720px,100%);height:100%;max-height:100dvh;display:flex;flex-direction:column;min-width:0;background:#fff;box-shadow:-12px 0 36px #20334d16;color:var(--ink,#20334d);font-size:14px;box-sizing:border-box;overflow:hidden}
+.v10-cooperation-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:21px 24px 17px;border-bottom:1px solid #e5eaf2;flex:none}
+.v10-cooperation-heading>div{min-width:0}
+.v10-cooperation-heading h2{font-size:20px;line-height:28px;font-weight:650;margin:0 0 3px;color:#20334d;overflow-wrap:anywhere}
+.v10-cooperation-heading span{font-size:12px;line-height:19px;color:#75849a;display:block;overflow-wrap:anywhere}
+.v10-cooperations .iconbtn{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:32px;height:32px;min-height:32px;padding:7px;border-radius:6px;color:#8594a9}
+.v10-cooperations .iconbtn svg{width:18px;height:18px}
+.v10-cooperation-toolbar{display:flex;align-items:center;gap:10px;padding:16px 24px;flex:none}
+.v10-cooperation-toolbar .searchfield{flex:1;min-width:0;width:auto;max-width:none;height:36px;min-height:36px;border:1px solid #dce4ef;border-radius:6px;box-sizing:border-box}
+.v10-cooperation-toolbar .searchfield>svg{width:16px;height:16px;flex-shrink:0}
+.v10-cooperation-toolbar .searchfield input{font:inherit;font-size:13px;width:100%;min-width:0;background:transparent;border:0;box-shadow:none;outline:none}
+.v10-cooperations .btn{font:inherit;font-size:13px;line-height:20px;min-height:36px;padding:7px 12px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}
+.v10-cooperations .btn svg{width:16px;height:16px;flex-shrink:0}
+.v10-cooperations .btn.small{min-height:32px;padding:5px 10px;font-size:13px}
+.v10-cooperation-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 24px 24px;scrollbar-gutter:stable}
+.v10-cooperation-row{display:flex;align-items:center;gap:16px;padding:15px 0;border-top:1px solid #e5eaf2;min-width:0}
+.v10-cooperation-row:first-child{border-top:0}
+.v10-cooperation-row>div{flex:1;min-width:0}
+.v10-cooperation-row strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere;font-size:14px;line-height:21px;font-weight:600;color:#20334d}
+.v10-cooperation-row p{margin:3px 0;font-size:13px;line-height:20px;color:#52647c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v10-cooperation-row small,.v10-cooperation-row time{display:block;font-size:12px;line-height:19px;color:#7b889d;overflow-wrap:anywhere}
+.v10-cooperation-empty{padding:44px 12px;text-align:center;color:#7c8ba0;font-size:13px;line-height:22px;margin:0}
+.v10-cooperation-empty p{margin:0 0 12px}
+.v10-cooperation-editor .v10-cooperation-heading{padding-bottom:16px}
+.v10-cooperation-back{font-size:12px;line-height:18px;color:#718299;margin:0 0 6px;display:inline-flex;align-items:center;gap:3px;padding:0}
+.v10-cooperation-back svg{width:13px;height:13px;transform:rotate(180deg)}
+.v10-cooperation-editor .v10-cooperation-scroll{padding-top:20px}
+.v10-cooperation-basic{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 16px}
+.v10-cooperation-basic .field:nth-child(2){grid-column:1/-1;grid-row:2}
+.v10-cooperation-basic .field{margin:0;min-width:0;display:flex;flex-direction:column;gap:6px}
+.v10-cooperations .field label,.v10-cooperation-basic .field>label{font-size:13px;line-height:20px;color:#52647d;margin:0}
+.v10-cooperations input:not([type=checkbox]):not([type=hidden]),.v10-cooperations select{box-sizing:border-box;width:100%;min-width:0;min-height:36px;height:36px;padding:7px 10px;border:1px solid #dce4ef;border-radius:6px;color:#314560;background:#fff;font:inherit;font-size:13px;line-height:20px}
+.v10-cooperations .v10-fee-kol-control{position:relative}
+.v10-cooperations .v10-fee-kol-control input{padding-right:33px}
+.v10-cooperations .v10-fee-kol-clear{width:28px;height:28px;min-height:28px;padding:6px}
+.v10-cooperations .v10-fee-kol-clear svg{width:14px;height:14px}
+.v10-cooperations .v10-fee-kol small{font-size:11px;line-height:17px;min-height:17px}
+.v10-cooperations input:focus-visible,.v10-cooperations select:focus-visible,.v10-cooperations button:focus-visible,.v10-cooperations a:focus-visible{outline:2px solid #0756ed;outline-offset:2px}
+.v10-cooperations input[readonly]{background:#f8faff;color:#536780}
+.v10-cooperations button:disabled,.v10-cooperations select:disabled,.v10-cooperations input:disabled{cursor:not-allowed;opacity:.55}
+.v10-cooperation-section{padding-top:19px;margin-top:19px;border-top:1px solid #e5eaf2;min-width:0}
+.v10-cooperation-section header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:0 0 10px}
+.v10-cooperation-section h3{font-size:15px;line-height:22px;font-weight:600;color:#263951;margin:0}
+.v10-cooperation-section header small{font-size:12px;line-height:18px;color:#7c8ba0}
+.v10-cooperation-section .field{margin:0}
+.v10-cooperation-choices{display:flex;flex-direction:column;border:1px solid #e0e7f0;border-radius:7px;max-height:244px;overflow:auto}
+.v10-cooperation-choice{display:flex;align-items:center;gap:9px;padding:10px 12px;min-width:0;cursor:pointer;margin:0;border-bottom:1px solid #ebeff5}
+.v10-cooperation-choice:last-child{border-bottom:0}
+.v10-cooperation-choice>input{flex-shrink:0;width:15px;height:15px;margin:0;accent-color:#0756ed}
+.v10-cooperation-choice>span{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.v10-cooperation-choice strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:13px;line-height:20px;font-weight:500;color:#31445e;overflow:hidden;overflow-wrap:anywhere}
+.v10-cooperation-choice small,.v10-cooperation-readonly-publications small{font-size:11px;line-height:17px;color:#7f8ca0;display:block;overflow-wrap:anywhere}
+.v10-cooperation-choice>a,.v10-cooperation-readonly-publications a{display:inline-flex;align-items:center;gap:4px;color:#0756ed;font-size:12px;line-height:20px;max-width:100%;min-width:0;overflow-wrap:anywhere;text-decoration:none}
+.v10-cooperation-choice a{white-space:nowrap;flex-shrink:0}
+.v10-cooperation-choice a svg,.v10-cooperation-readonly-publications a svg{width:13px;height:13px;flex-shrink:0}
+.v10-cooperation-choice.is-unavailable{background:#fafbfd;cursor:default}
+.v10-cooperation-choice.is-unavailable strong{color:#8a96a8}
+.v10-cooperation-hint{font-size:12px;line-height:20px;color:#79889c;margin:11px 0 0;overflow-wrap:anywhere}
+.v10-cooperation-choices>.v10-cooperation-hint{margin:0;padding:14px 12px}
+.v10-cooperation-hint.error,.v10-cooperations .inlinecheck.error{color:#d24747}
+.v10-cooperation-readonly-publications>div{padding:9px 0;border-bottom:1px solid #edf0f5}
+.v10-cooperation-selection{font-size:12px;line-height:20px;padding:10px 12px;background:#f1f6ff;color:#526985;border-radius:6px;margin:20px 0 0;overflow-wrap:anywhere}
+.v10-cooperations .inlinecheck{font-size:12px;line-height:20px;margin:10px 0 0;overflow-wrap:anywhere}
+.v10-cooperations #cooperationreload{margin-top:9px}
+.v10-cooperation-footer{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5eaf2;padding:14px 24px;background:#fff}
+.v10-cooperation-footer>span{font-size:12px;line-height:19px;color:#7c8b9f;min-width:0}
+.v10-cooperation-footer>div{display:flex;gap:8px;flex-shrink:0}
+.v10-cooperation-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.v10-cooperations [hidden]{display:none!important}
+@media(max-width:620px){.v10-cooperation-heading{padding:17px 16px 14px}.v10-cooperation-toolbar{padding:13px 16px;gap:8px}.v10-cooperation-scroll{padding:0 16px 20px}.v10-cooperation-editor .v10-cooperation-scroll{padding-top:17px}.v10-cooperation-basic{gap:13px 12px}.v10-cooperation-footer{padding:12px 16px;gap:8px}.v10-cooperation-row{gap:10px}.v10-cooperation-row .btn{padding:5px 8px}.v10-cooperation-heading h2{font-size:19px;line-height:27px}.v10-cooperation-toolbar .btn{padding:7px 9px}.v10-cooperation-choice{padding:9px 10px}.v10-cooperation-section header{gap:4px 9px}.v10-cooperation-footer>span{max-width:110px}.v10-cooperation-footer .btn{padding:7px 10px}}
+@media(max-width:360px){.v10-cooperation-basic{grid-template-columns:minmax(0,1fr)}.v10-cooperation-basic .field:nth-child(2){grid-column:auto;grid-row:auto}.v10-cooperation-footer{flex-wrap:wrap}.v10-cooperation-footer>span{max-width:none}.v10-cooperation-footer>div{margin-left:auto}}
+.v10-cooperation-unavailable{margin-top:16px;padding:11px 12px;border:1px solid #f1d3bc;border-radius:6px;background:#fff9f2;color:#94622e}
+.v10-cooperation-unavailable p{font-size:12px;line-height:20px;margin:0 0 8px;overflow-wrap:anywhere}
+.v10-cooperations .v10-cooperation-toolbar .searchfield input{border:0;box-shadow:none;height:100%;min-height:0;padding:0;margin:0;background:transparent;border-radius:0;outline:0}
+.v10-cooperations .v10-cooperation-toolbar .searchfield input:focus-visible{outline:0;box-shadow:none}
+.v10-cooperations .v10-cooperation-toolbar .searchfield:focus-within{border-color:#0756ed;box-shadow:0 0 0 2px #0756ed20}
+.leaveprompt.v10-cooperation-leave{z-index:100}
+.v10-cooperation-leave .compacthelp{box-sizing:border-box;width:min(440px,calc(100vw - 32px))!important;max-height:calc(100dvh - 32px);overflow:auto;padding:22px!important;border-radius:10px}
+.v10-cooperation-leave .compacthelp h2{font-size:19px;line-height:27px;font-weight:650;margin:0 0 10px;color:#20334d}
+.v10-cooperation-leave .compacthelp p{font-size:13px;line-height:21px;margin:0 0 12px;overflow-wrap:anywhere}
+.v10-cooperation-leave .compacthelp .actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px;margin-top:18px}
+.v10-cooperation-leave .compacthelp .btn{font:inherit;font-size:13px;line-height:20px;min-height:36px;padding:7px 11px;border-radius:6px;white-space:nowrap}
+.v10-cooperation-leave .compacthelp .btn:focus-visible{outline:2px solid #0756ed;outline-offset:2px}
+@media(max-width:440px){.v10-cooperation-leave .compacthelp{padding:19px 16px!important}.v10-cooperation-leave .compacthelp .actions{gap:7px}.v10-cooperation-leave .compacthelp .btn{padding:7px 9px}}

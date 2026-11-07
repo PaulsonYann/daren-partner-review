@@ -1,0 +1,22 @@
+/* Fee application only: keep its existing 38px controls and compact spacing. */
+.v10-fee-kol-control{position:relative;min-width:0}
+.modal.fee-reference-form#v7form .v10-fee-kol-control #feekolquery{padding-right:35px;text-overflow:ellipsis}
+.v10-fee-kol-clear{position:absolute;right:3px;top:3px;width:32px;height:32px;min-height:0;padding:8px;border:0;border-radius:4px;background:transparent;color:#7b899f;display:grid;place-items:center}
+.v10-fee-kol-clear[hidden]{display:none}
+.v10-fee-kol-clear svg{width:16px;height:16px}
+.v10-fee-kol-clear:hover{color:var(--blue);background:var(--tint)}
+.modal.fee-reference-form#v7form .v10-fee-kol #feekolhint{display:block;height:18px;line-height:18px;margin-top:4px;font-size:12px;color:#75839a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v10-fee-kol-popup{position:fixed;z-index:1600;box-sizing:border-box;overflow:auto;overscroll-behavior:contain;border:1px solid #d7deea;border-radius:7px;background:#fff;box-shadow:0 8px 25px #1d355326;color:#233750;font-size:13px;line-height:20px;padding:4px}
+.v10-fee-kol-option{display:block;width:100%;height:auto;min-height:54px;padding:7px 9px;text-align:left;border:0;border-radius:4px;background:#fff;color:#233750;font:inherit;cursor:pointer}
+.v10-fee-kol-option:hover,.v10-fee-kol-option[aria-selected=true]{background:#edf3ff;color:#0758ec}
+.v10-fee-kol-option strong{display:block;font-size:14px;line-height:20px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v10-fee-kol-detail{display:flex;gap:9px;align-items:center;color:#75839a;font-size:12px;line-height:18px;min-width:0}
+.v10-fee-kol-detail>span{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v10-fee-kol-detail small{flex:none;font-size:11px;line-height:18px}
+.v10-fee-kol-message{padding:12px 9px;color:#75839a;font-size:12px;line-height:20px;overflow-wrap:anywhere}
+.v10-fee-kol-footer{padding:6px 9px;border-top:1px solid #e6eaf1;font-size:12px;line-height:18px;color:#75839a}
+.v10-fee-kol-retry{margin:0 9px 8px;padding:4px 10px;min-height:28px;border:1px solid #b7cdfb;border-radius:4px;background:#fff;color:#0758ec;font-size:12px;line-height:18px;cursor:pointer}
+.v10-fee-kol-retry:focus-visible,.v10-fee-kol-clear:focus-visible{outline:2px solid #0758ec;outline-offset:1px}
+
+/* Keep the fixed popup inside the modal accessibility tree without a transformed containing block. */
+.modal.fee-reference-form#v7form{transform:none}

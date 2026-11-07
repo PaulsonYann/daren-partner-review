@@ -1,0 +1,38 @@
+.v10-kol-drawer #followform.v10-follow-form{display:flex;flex-direction:column;flex:1;min-height:0;margin:0;overflow:hidden}
+.v10-kol-drawer #followform .v10-follow-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 var(--v10-drawer-pad) 18px;scroll-padding:16px}
+.v10-kol-drawer #followform .v10-follow-section{margin:0;padding:18px 0;border-bottom:1px solid var(--v9line)}
+.v10-kol-drawer #followform .v10-follow-section:last-child{border-bottom:0}
+.v10-kol-drawer #followform .v10-follow-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
+.v10-kol-drawer #followform .v10-follow-section-head h3{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;line-height:22px;font-weight:650;color:var(--v9ink)}
+.v10-kol-drawer #followform .v10-follow-section-head h3 svg{width:18px;height:18px;flex:0 0 18px;stroke:var(--v9accent)}
+.v10-kol-drawer #followform .v10-follow-section .field{margin:0}
+.v10-kol-drawer #followform .v10-follow-section label{display:block;margin:0 0 6px;font-size:12px;line-height:18px;color:var(--v9muted);font-weight:400}
+.v10-kol-drawer #followform .v10-follow-section textarea{display:block;width:100%;min-height:92px;height:92px;max-height:240px;resize:vertical;padding:10px 12px;font-size:13px;line-height:21px;border-radius:6px;border:1px solid var(--v9line);background:#fff}
+.v10-kol-drawer #followform .v10-follow-next{display:grid;grid-template-columns:minmax(152px,178px) minmax(0,1fr);align-items:start;gap:10px 12px}
+.v10-kol-drawer #followform .v10-follow-next>.field{min-width:0}
+.v10-kol-drawer #followform .v10-follow-legacy{grid-column:1/-1;margin:0;color:var(--v9muted);font-size:12px;line-height:18px;overflow-wrap:anywhere}
+.v10-kol-drawer #followform .v10-follow-next input{width:100%;min-width:0;height:36px;min-height:36px;padding:7px 10px;font-size:13px;line-height:20px;border:1px solid var(--v9line);border-radius:6px}
+.v10-kol-drawer #followform .v10-follow-empty{margin:0;color:var(--v9muted);font-size:13px;line-height:22px}
+.v10-kol-drawer #followform .v10-follow-task,.v10-kol-drawer #followform .v10-follow-fee{display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--v9line);border-radius:6px;margin-top:8px;min-width:0}
+.v10-kol-drawer #followform .v10-follow-task>div:first-child,.v10-kol-drawer #followform .v10-follow-fee>div{flex:1;min-width:0}
+.v10-kol-drawer #followform .v10-follow-task strong,.v10-kol-drawer #followform .v10-follow-fee strong{display:block;font-size:13px;line-height:21px;font-weight:500;overflow-wrap:anywhere}
+.v10-kol-drawer #followform .v10-follow-task small,.v10-kol-drawer #followform .v10-follow-fee small{display:block;margin-top:3px;font-size:12px;line-height:18px;color:var(--v9muted);overflow-wrap:anywhere}
+.v10-kol-drawer #followform .v10-follow-row-actions{display:flex;gap:10px;align-items:center;flex-shrink:0}
+.v10-kol-drawer #followform.v10-follow-form .textbtn{display:inline-flex;align-items:center;gap:4px;padding:2px 0;font-size:12px;line-height:20px;color:var(--v9accent);white-space:nowrap}
+.v10-kol-drawer #followform.v10-follow-form .textbtn svg{width:13px;height:13px}
+.v10-kol-drawer #followform .v10-follow-row-actions .btn{height:28px;min-height:28px;padding:3px 10px;font-size:12px;line-height:20px}
+.v10-kol-drawer #followform .v10-follow-fee .fee-status{flex-shrink:0;padding:3px 7px;border-radius:4px;font-size:11px;line-height:18px;white-space:nowrap}
+.v10-kol-drawer #followform .v10-follow-timeline{list-style:none;margin:0;padding:0 0 0 7px}
+.v10-kol-drawer #followform .v10-follow-timeline li{position:relative;padding:0 0 17px 20px;border-left:1px solid #dce6f6}
+.v10-kol-drawer #followform .v10-follow-timeline li:last-child{padding-bottom:0}
+.v10-kol-drawer #followform .v10-follow-timeline li:before{content:"";position:absolute;left:-4px;top:5px;width:7px;height:7px;border-radius:50%;background:var(--v9accent);box-shadow:0 0 0 3px #edf3ff}
+.v10-kol-drawer #followform .v10-follow-event-meta{display:flex;flex-wrap:wrap;gap:8px;color:var(--v9muted);font-size:12px;line-height:20px}
+.v10-kol-drawer #followform .v10-follow-timeline p{margin:5px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:21px;color:var(--v9ink)}
+.v10-kol-drawer #followform .v10-follow-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:0 0 auto;min-height:62px;padding:10px var(--v10-drawer-pad);border-top:1px solid var(--v9line);background:#fff}
+.v10-kol-drawer #followform .v10-follow-footer>.btn{min-height:34px;height:34px;padding:6px 13px;font-size:13px;line-height:20px;white-space:nowrap;flex-shrink:0}
+.v10-kol-drawer #followform .v10-follow-feedback{min-width:0;font-size:12px;line-height:20px;color:var(--v9muted)}
+.v10-kol-drawer #followform #v10-follow-error{margin:0;color:#bc3040;white-space:pre-wrap;overflow-wrap:anywhere}
+.v10-kol-drawer #followform #v10-follow-status[data-state=error]{color:#bc3040}
+.v10-kol-drawer #followform .v10-follow-section input:focus,.v10-kol-drawer #followform .v10-follow-section textarea:focus{outline:2px solid #c8d9ff;outline-offset:1px;border-color:var(--v9accent)}
+@media(max-width:700px){.v10-kol-drawer #followform .v10-follow-fee{flex-wrap:wrap}.v10-kol-drawer #followform .v10-follow-fee>div{flex-basis:65%}.v10-kol-drawer #followform .v10-follow-footer{gap:8px}.v10-kol-drawer #followform .v10-follow-footer>.btn{padding:6px 10px}}
+@media(max-width:520px){.v10-kol-drawer #followform .v10-follow-next{grid-template-columns:minmax(0,1fr)}}

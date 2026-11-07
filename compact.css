@@ -1,0 +1,227 @@
+/* V9 approved compact workspace. Keep readable type and content-driven heights. */
+.layout .sidebar,.layout:has(.v9todo-page) .sidebar,.layout:has(.v9contracts) .sidebar{width:228px;padding:20px 12px 14px}
+.layout .main,.layout:has(.v9todo-page) .main,.layout:has(.v9contracts) .main{margin-left:228px;width:calc(100% - 228px);min-width:0}
+.layout .sidebar .brand{padding:0 8px 16px;gap:9px}
+.layout .sidebar .brand strong,.layout:has(.v9contracts) .sidebar .brand strong{font-size:20px;letter-spacing:-.5px}
+.layout .brand small,.layout:has(.v9todo-page) .brand small{font-size:11px;letter-spacing:.6px}
+.layout .sidebar .brandmark,.layout:has(.v9todo-page) .brandmark,.layout:has(.v9contracts) .sidebar .brandmark{width:36px;height:36px;border-radius:9px;flex:0 0 36px}
+.layout .sidebar .brandmark svg,.layout:has(.v9todo-page) .brandmark svg,.layout:has(.v9contracts) .sidebar .brandmark svg{width:22px;height:22px}
+.layout .sidebar .navbtn,.layout:has(.v9todo-page) .sidebar .navbtn,.layout:has(.v9contracts) .sidebar .navbtn{min-height:42px;padding:9px 12px;margin:2px 0;font-size:14px;line-height:22px;gap:10px}
+.layout .sidebar .navbtn svg,.layout:has(.v9todo-page) .sidebar .navbtn svg{width:18px;height:18px;flex-shrink:0}
+.layout .sidebar .navbtn[data-page=training]{position:relative;margin-top:14px;padding-top:9px;border-top:0;border-radius:7px}
+.layout .sidebar .navbtn[data-page=training]::before{content:"";position:absolute;left:12px;right:12px;top:-8px;height:1px;background:var(--line);pointer-events:none}
+.layout .sidebar .navlabel,.layout:has(.v9contracts) .sidebar .navlabel{font-size:12px;margin:6px 12px 8px}
+.layout .sidebarbottom{padding-top:10px}
+.layout .sidebarbottom .profile{padding:9px 8px}
+.layout .topbar,.layout:has(.v9contracts) .topbar{height:60px;min-height:60px;padding:0 24px;gap:12px}
+.layout .topbar .breadcrumb{font-size:14px;line-height:22px;font-weight:400;color:#98a2b2}
+.layout .topbar .breadcrumb span{font-weight:inherit;color:#46536a}
+.layout .topbar .global-search,.layout:has(.v9contracts) .global-search{height:36px;min-width:220px;font-size:13px}
+.layout .content,.layout .content:has(.v9todo-page),.layout .content:has(.v9contracts){padding:20px 24px 24px;min-width:0}
+.content .panel{min-width:0}
+.content .toolbar{padding:12px 16px;gap:8px;flex-wrap:wrap}
+.content .toolbar .searchfield{height:38px;min-height:38px}
+.content .toolbar>select,.content .fee-tools select{min-height:38px;height:38px;padding:6px 9px;font-size:13px}
+.content .btn{min-height:36px;font-size:14px;line-height:20px;padding:7px 12px}
+.content .btn.small{min-height:32px;font-size:13px;line-height:20px;padding:5px 10px}
+.content .tabs{gap:22px;padding-left:16px;padding-right:16px;min-height:42px}
+.content .tabs .tab{font-size:14px;line-height:22px;padding:9px 2px 8px}
+.content .footer{padding:10px 16px;line-height:20px;font-size:12px}
+.content .panelhead{padding:14px 16px;gap:12px;flex-wrap:wrap}
+.content .panelhead h2{font-size:16px;line-height:24px}
+.content .panelhead p{margin-top:3px;line-height:19px}
+.content .stats{gap:12px;margin-bottom:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.content .stat{min-height:92px;padding:13px 16px}
+.content .stat-value{font-size:26px;line-height:30px;margin:5px 0 4px}
+.content .stat-title,.content .stat-label{font-size:13px;line-height:20px}
+.content .stat-sub{font-size:12px;line-height:18px}
+.content .task{min-height:58px;padding:9px 16px;gap:10px}
+.content .task .avatar{width:32px;height:32px;flex:0 0 32px;font-size:13px}
+.content .task .task-desc{margin-top:2px;font-size:13px;line-height:20px;white-space:normal;overflow-wrap:anywhere}
+.content .task-time{margin-left:12px;font-size:12px;line-height:20px}
+.content .bottomstrip{margin-top:14px;padding:12px 16px;gap:10px}
+.content .bottomstrip strong{margin-bottom:2px;line-height:19px}
+.content .bottomstrip p{line-height:19px}
+.content .fee-summary{gap:12px;margin-bottom:14px}
+.content .fee-summary>div{padding:12px 16px}
+.content .fee-summary strong{font-size:25px;margin-top:4px;line-height:30px}
+.content .fee-tools .searchfield{min-width:220px}
+.content .filterstate{padding-bottom:7px}
+.content .tablewrap{max-width:100%;overflow-x:auto}
+.content table:not(.casetable) th{padding:10px 12px;font-size:13px;line-height:20px}
+.content table:not(.casetable) td{padding:9px 12px;font-size:14px;line-height:22px;vertical-align:middle}
+.content .v8koltable{min-width:1120px}
+.content .v8koltable td small{font-size:12px;line-height:18px}
+.content .v8koltable .avatar{width:30px;height:30px;flex:0 0 30px}
+.content .v9contracts .toolbar{padding:12px 16px 8px;gap:10px}
+.content .v9contracts .toolbar .searchfield{height:38px;max-width:45%}
+.content .v9contracts .toolbar #contractmarket{min-height:38px;height:38px;padding:6px 10px;font-size:13px}
+.content .v9contracts .toolbar>.btn{height:36px;min-height:36px;min-width:118px;padding:7px 12px;font-size:14px;gap:7px}
+.content .v9contracts .toolbar>.btn svg{width:17px;height:17px}
+.content .v9contracts .v9contract-type{padding:0 16px 10px;font-size:13px;line-height:21px}
+.content .v9contracts .tabs{min-height:44px;gap:24px}
+.content .v9contracts .tab{padding:10px 2px 9px;font-size:14px;line-height:22px}
+.content .v9contracts table{min-width:1000px}
+.content .v9contracts th{height:42px;font-size:13px;line-height:20px;padding:10px 14px}
+.content .v9contracts tbody tr{height:54px}
+.content .v9contracts td{padding:8px 14px}
+.content .v9contract-kol{gap:10px}
+.content .v9contract-kol .avatar{height:32px;width:32px;flex:0 0 32px;font-size:13px}
+.content .v9contract-kol>.textbtn{font-size:14px;line-height:22px}
+.content .v9contracts .v9status{padding:3px 10px;font-size:13px;line-height:20px}
+.content .v9contracts .v9contract-actions{gap:10px;flex-wrap:wrap}
+.content .v9contracts .footer{padding:10px 16px;font-size:12px;line-height:20px}
+.content .logrow{padding:10px 16px;gap:18px;grid-template-columns:174px minmax(130px,200px) minmax(220px,1fr)}
+.content .v9todo-heading{margin-bottom:14px}
+.content .v9todo-heading h1{font-size:24px;line-height:30px}
+.content .v9todo-heading p{font-size:13px;line-height:20px;margin-top:3px}
+.content .v9todo-heading-actions>.btn{height:38px;min-height:38px;padding:8px 14px}
+.content .v9todo-heading-actions{flex-wrap:wrap;min-width:0}
+.content .v9todo-heading-actions>time{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.content .v9todo-page .v9task-stats{gap:12px;margin-bottom:14px}
+.content .v9todo-page .v9task-stats button{min-height:76px;padding:12px 16px;gap:13px}
+.content .v9todo-page .v9stat-icon{width:42px;height:42px;flex:0 0 42px}
+.content .v9todo-page .v9stat-icon svg{width:24px;height:24px}
+.content .v9todo-page .v9stat-content{gap:3px}
+.content .v9todo-page .v9stat-content>span{font-size:13px;line-height:19px}
+.content .v9todo-page .v9stat-content strong{font-size:25px;line-height:28px}
+.content .v9todo-page .toolbar{padding:12px 16px 8px;gap:10px}
+.content .v9todo-page .toolbar select{height:38px;min-height:38px;font-size:13px}
+.content .v9todo-page .tabs{min-height:44px;gap:24px}
+.content .v9todo-page .tabs .tab{padding:9px 3px 8px;font-size:14px;line-height:22px}
+.content .v9todo-page .v9task-columns{padding:9px 18px;font-size:13px;line-height:21px}
+.content .v9todo-page .v9task-group h2{padding:8px 18px;min-height:37px;font-size:14px;line-height:21px}
+.content .v9todo-page .v9task-group h2>svg{width:18px;height:18px}
+.content .v9todo-page .v9task{min-height:52px;padding:8px 18px;gap:12px}
+.content .v9todo-page .v9task-main strong{font-size:14px;line-height:22px}
+.content .v9todo-page .v9task-owner,.content .v9todo-page .v9task-owner .textbtn{font-size:13px;line-height:20px}
+.content .v9todo-page .v9task-owner .avatar{width:26px;height:26px;flex-basis:26px;font-size:11px}
+.content .v9todo-page .v9task-edit{width:32px;height:32px;min-width:32px;min-height:32px;padding:7px}
+.content .v9todo-page .v9task-edit svg{width:18px;height:18px}
+.content .v9todo-page .v9more{padding:9px 0 9px 65px;font-size:13px;line-height:20px}
+/* Detail fields remain editable and can grow for long values. */
+.v9profile-drawer .v9identity{padding:16px 0 13px;gap:12px}
+.v9profile-drawer .v9identity .avatar{width:48px;height:48px;flex-basis:48px;font-size:20px}
+.v9profile-drawer .v9identity [data-profilefield=name] .v8display{font-size:20px;line-height:28px}
+.v9profile-header .drawer-tabs{gap:24px}
+.v9profile-header .drawer-tabs button{padding:10px 0;font-size:14px;line-height:20px}
+.v9profile-drawer .v9profile-section{padding:14px 0 12px}
+.v9profile-drawer .v9profile-section h3{font-size:15px;line-height:23px;margin-bottom:8px}
+.v9profile-drawer .fieldgrid{gap:4px 20px}
+.v9profile-drawer .v9profile-section:has([data-profilefield=emails]) .fieldgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px}
+.v9profile-drawer :is([data-profilefield=whatsapp],[data-profilefield=line],[data-profilefield=wechat]){grid-column:auto!important;display:block;padding-right:24px;min-width:0}
+.v9profile-drawer :is([data-profilefield=whatsapp],[data-profilefield=line],[data-profilefield=wechat]) .v8display{min-width:0;align-items:flex-start;gap:4px}
+.v9profile-drawer :is([data-profilefield=whatsapp],[data-profilefield=line],[data-profilefield=wechat]) .v8display>span{min-width:0;overflow-wrap:anywhere}
+.v9profile-drawer :is([data-profilefield=whatsapp],[data-profilefield=line],[data-profilefield=wechat]) .v8display>.iconbtn{flex:0 0 32px}
+.v9profile-drawer .v9supplement,.v9profile-drawer .v8accounts{padding:13px 0}
+.v9profile-drawer summary{font-size:14px;line-height:22px}
+.v9profile-drawer .v9account-table{margin-top:10px}
+.v9profile-drawer .v9account-table th,.v9profile-drawer .v9account-table td{padding:8px 10px}
+.v9profile-drawer .v9products{padding:10px 0 2px}
+.v9drawer #followform .field{margin-bottom:12px}
+.v9drawer #followform .formtitle{margin:12px 0 8px;font-size:15px;line-height:23px}
+.v9drawer #followform .fieldgrid{margin:12px 0 10px;gap:12px}
+.v9drawer #followform label{font-size:13px;line-height:20px;margin-bottom:5px}
+.v9drawer #followform input{height:38px;min-height:38px;padding:7px 10px;font-size:14px;line-height:22px}
+.v9drawer #followform textarea{min-height:76px;font-size:14px;line-height:22px;padding:8px 10px}
+.v9drawer #followform .btn,.v9drawer .detailactions .btn{min-height:36px;font-size:13px;padding:7px 12px}
+.v9drawer .detailactions{margin:16px 0;gap:8px}
+.v9drawer .timeline .event{padding-bottom:14px}
+.v9drawer .timeline .event p{margin-top:6px;line-height:22px}
+.v9drawer #kolfees{padding:14px 0;margin-top:16px}
+.v9drawer .drawer-tabs{margin-bottom:12px}
+.v9drawer .v9drawer-head .draweridentity{margin:0;padding:12px 24px}
+.v9drawer .v9drawer-head .draweridentity h2{font-size:20px;line-height:28px;margin-bottom:3px}
+.v9drawer .v9drawer-head .drawer-tabs button{padding:10px 0}
+.feedrawer .fee-balance{padding:12px;gap:12px}
+.feedrawer .fee-actionbar{margin:12px 0;gap:8px}
+.feedrawer .delivery-card{padding:14px;margin:10px 0}
+.feedrawer .delivery-card p{margin:7px 0}
+/* Learning navigation is dense; the reading measure stays comfortable. */
+.content .v9progress{margin:2px 16px 12px;padding:14px 16px;gap:16px;border-radius:9px}
+.content .v9progress-ring{width:58px;height:58px}
+.content .v9progress-ring:before{inset:5px}
+.content .v9progress-ring strong{font-size:18px}
+.content .v9progress h2{font-size:17px;line-height:24px;margin-bottom:3px}
+.content .v9progress p{font-size:13px;line-height:20px;margin-bottom:3px}
+.content .v9progress small{font-size:12px;line-height:18px}
+.content .v9course-grid{gap:12px;padding:16px;align-items:start}
+.content .v9course-category h3{padding:12px 14px 8px;font-size:14px;line-height:22px}
+.content .v9category-progress{margin:0 14px 3px}
+.content .v9course{min-height:48px;padding:11px 14px;gap:9px}
+.content .v9course>span:nth-child(2){font-size:14px;line-height:22px}
+.content .v9legend{padding:0 16px 14px}
+.content .v9reading{padding:16px 24px 24px}
+.content .v9reading h2{font-size:21px;line-height:30px;margin:18px 0 14px}
+.content .v9reading>p{font-size:15px;line-height:1.9}
+.content .v9reading .actions{margin:20px 0 10px}
+.content .v9learning .help-faq{padding:14px 16px}
+@media(max-width:1350px){
+ .layout .sidebar,.layout:has(.v9todo-page) .sidebar,.layout:has(.v9contracts) .sidebar{width:200px;padding-left:10px;padding-right:10px}
+ .layout .main,.layout:has(.v9todo-page) .main,.layout:has(.v9contracts) .main{margin-left:200px;width:calc(100% - 200px)}
+ .layout .sidebar .brand strong,.layout:has(.v9contracts) .sidebar .brand strong{font-size:18px}
+ .layout .content,.layout .content:has(.v9todo-page),.layout .content:has(.v9contracts){padding:18px 20px 22px}
+ .content .v9todo-page .v9task-columns,.content .v9todo-page .v9task{grid-template-columns:24px minmax(240px,1fr) 68px 180px 112px;gap:10px}
+ .content .v9todo-page .v9task-main{display:grid;grid-template-columns:minmax(120px,1.2fr) minmax(100px,1fr);align-items:center;gap:8px}
+ .content .v9todo-page .v9due{flex-wrap:wrap;white-space:normal}
+ .content .v9todo-page .v9due small{font-size:12px}
+ .content .v9todo-page .toolbar select{min-width:140px;font-size:13px}
+}
+@media(max-width:1000px){
+ .content .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .content .v9todo-page .v9task-main{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+ .content .v9todo-page .v9task-columns,.content .v9todo-page .v9task{grid-template-columns:24px minmax(170px,1fr) 44px 140px 100px}
+ .content .v9todo-page .v9due{font-size:13px}
+ .content .v9todo-page .v9task-actions{gap:6px}
+ .content .v9course-grid{grid-template-columns:1fr}
+ .content .v9progress{flex-wrap:wrap}
+ .content .v9todo-page .toolbar{flex-wrap:wrap}
+ .content .v9todo-page .toolbar .searchfield{flex:1 0 100%;max-width:none}
+ .content .logrow{grid-template-columns:150px minmax(100px,1fr) minmax(0,1.5fr);gap:12px}
+}
+@media(max-width:900px){
+ .content .v9todo-page .v9task{grid-template-columns:24px minmax(120px,1fr) 140px;gap:7px 10px}
+ .content .v9todo-page .v9task-columns{display:none}
+ .content .v9todo-page .v9task>.v9priority-dot{grid-column:2;grid-row:2;justify-self:start}
+ .content .v9todo-page .v9due{grid-column:3;grid-row:1;gap:2px}
+ .content .v9todo-page .v9task-actions{grid-column:3;grid-row:2;flex-direction:row;gap:7px;justify-content:flex-start}
+ .content .v9todo-page .v9task-owner,.content .v9todo-page .v9task-owner .textbtn{font-size:13px}
+}
+@media(max-width:760px){
+ .layout .sidebar,.layout:has(.v9todo-page) .sidebar,.layout:has(.v9contracts) .sidebar{width:74px;padding:18px 8px}
+ .layout .main,.layout:has(.v9todo-page) .main,.layout:has(.v9contracts) .main{margin-left:74px;width:calc(100% - 74px)}
+ .layout .sidebar .brand{padding:0 10px 16px}
+ .layout .topbar,.layout:has(.v9contracts) .topbar{padding:0 16px}
+ .layout .topbar .global-search,.layout:has(.v9contracts) .global-search{min-width:0}
+ .layout .content,.layout .content:has(.v9todo-page),.layout .content:has(.v9contracts){padding:16px}
+ .v9profile-drawer .v9profile-section:has([data-profilefield=emails]) .fieldgrid{grid-template-columns:1fr}
+ .content .v9todo-page .v9task{grid-template-columns:24px minmax(120px,1fr) 120px}
+ .content .v9todo-page .v9task>.v9priority-dot{grid-column:2;grid-row:2;justify-self:start}
+ .content .v9todo-page .v9due{grid-column:3;grid-row:1}
+ .content .v9todo-page .v9task-actions{grid-column:3;grid-row:2}
+ .content .v9todo-page .v9task-columns{display:none}
+}
+/* Keep actual task controls readable when the compact sidebar leaves little room. */
+@media(max-width:420px){
+ .content .v9todo-page .v9task-stats{grid-template-columns:minmax(0,1fr);gap:8px}
+ .content .v9todo-page .v9task-stats button{min-height:60px;padding:9px 12px;gap:12px}
+ .content .v9todo-page .v9stat-content{flex:1;min-width:0;flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+ .content .v9todo-page .v9stat-content>span{white-space:nowrap}
+ .content .v9todo-page .toolbar .searchfield{min-width:0}
+ .content .v9todo-page .toolbar #v9taskorder{min-width:0;max-width:100%}
+ .content .v9todo-page .v9task{grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;padding:10px 12px}
+ .content .v9todo-page .v9check{grid-column:1;grid-row:1;align-self:start;margin-top:2px}
+ .content .v9todo-page .v9task-main{grid-column:2;grid-row:1;min-width:0;width:100%;gap:5px}
+ .content .v9todo-page .v9task-main strong{overflow-wrap:anywhere}
+ .content .v9todo-page .v9task-owner .textbtn{min-width:0;white-space:normal}
+ .content .v9todo-page .v9task>.v9priority-dot{grid-column:1;grid-row:2;justify-self:center;align-self:center}
+ .content .v9todo-page .v9due{grid-column:2;grid-row:2;min-width:0;align-items:flex-start;flex-direction:column;gap:0;white-space:normal}
+ .content .v9todo-page .v9due :is(span,small){white-space:normal;overflow-wrap:anywhere}
+ .content .v9todo-page .v9task-actions{grid-column:2;grid-row:3;min-width:0;flex-wrap:wrap;justify-content:flex-start;gap:7px}
+ .content .v9progress>.btn{margin-left:0;min-width:0;max-width:100%;white-space:normal}
+ .content .v9course{display:grid;grid-template-columns:24px minmax(0,1fr) 16px;gap:5px 8px;align-items:start}
+ .content .v9course>.v9learn-icon{grid-column:1;grid-row:1}
+ .content .v9course>span:nth-child(2){grid-column:2;grid-row:1;min-width:0;white-space:normal;overflow-wrap:anywhere}
+ .content .v9course>.v9learn-status{grid-column:2;grid-row:2;justify-self:start}
+ .content .v9course>svg{grid-column:3;grid-row:1;align-self:center}
+}

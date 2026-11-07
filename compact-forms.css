@@ -1,0 +1,98 @@
+/* V9 compact entry forms. Keep business drawers and personal settings unchanged. */
+.modal.compact-form:is(#newform,#v4form,#v7form){width:560px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);padding:20px 22px;overflow:auto;overscroll-behavior:contain;scroll-padding:76px 0 90px;border-radius:12px}
+.modal.compact-kol#newform{width:680px}
+.modal.compact-contract#v4form,.modal.compact-task#v7form{width:540px}
+.modal.compact-form>.modalheading{position:sticky;top:-20px;z-index:2;margin:-20px -22px 12px;padding:16px 22px 12px;align-items:center;background:#fff;border-bottom:1px solid var(--line);gap:12px}
+.modal.compact-form>.modalheading h2{font-size:20px;line-height:28px;margin:0;overflow-wrap:anywhere}
+.modal.compact-form>.modalheading .eyebrow{font-size:10px;line-height:15px;margin-bottom:2px}
+.modal.compact-form>.modalheading .iconbtn{width:32px;height:32px;min-width:32px;min-height:32px;padding:7px;flex-shrink:0}
+.modal.compact-form>.sectionnote{margin:0 0 14px;font-size:12px;line-height:20px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field{min-width:0;margin:0 0 11px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field label,.modal.compact-form .choicefield legend{font-size:13px;line-height:20px;margin:0 0 4px;color:#65748b}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field input:not([type=checkbox]):not([type=radio]):not([type=file]),.modal.compact-form:is(#newform,#v4form,#v7form) .field select:not([multiple]){width:100%;max-width:100%;height:38px;min-height:38px;padding:7px 10px;font-size:14px;line-height:22px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field textarea{width:100%;min-height:70px;padding:7px 10px;font-size:14px;line-height:22px;resize:vertical}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field select[multiple]{width:100%;height:auto;min-height:108px;padding:7px 10px;font-size:14px;line-height:22px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field small{display:block;font-size:12px;line-height:19px;margin-top:4px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field label small{display:inline;margin:0;font-weight:400}
+.modal.compact-form:is(#newform,#v4form,#v7form) .field label>input{display:block;margin-top:4px}
+.modal.compact-form:is(#newform,#v4form,#v7form) .fieldgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 12px;margin:0 0 11px;align-items:start}
+.modal.compact-form:is(#newform,#v4form,#v7form) .fieldgrid>.field{margin:0}
+.modal.compact-form .choicefield{margin:0 0 14px;padding:0;min-width:0}
+.modal.compact-form .choicefield legend small{font-size:12px;line-height:20px}
+.modal.compact-form .multichips{gap:7px}
+.modal.compact-form .checkchip>span{min-height:32px;padding:6px 10px;line-height:20px}
+.modal.compact-form .formtitle{font-size:15px;line-height:23px;margin:17px 0 10px}
+.modal.compact-form .notice{font-size:12px;line-height:20px;margin:10px 0;padding:10px 12px}
+.modal.compact-form .inlinecheck{font-size:12px;line-height:20px;margin:8px 0;min-height:0}
+.modal.compact-form .inlinecheck:empty{display:none}
+.modal.compact-form>.actions{position:sticky;bottom:-20px;z-index:2;display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px;margin:14px -22px -20px;padding:12px 22px;background:#fff;border-top:1px solid var(--line)}
+.modal.compact-form>.actions>.inlinecheck{flex:0 0 100%;width:100%;min-width:0;margin:0;padding:0;text-align:left;overflow-wrap:anywhere}
+.modal.compact-form:has(>.actions>.inlinecheck:not(:empty)){scroll-padding-bottom:140px}
+.modal.compact-form:is(#newform,#v4form,#v7form)>.actions .btn{min-height:36px;height:auto;padding:7px 13px;font-size:14px;line-height:20px}
+.modal.compact-form :is(input,select,textarea):focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.modal.compact-form :is(button,input,select,textarea):disabled{cursor:not-allowed}
+/* Tall multi-select and long text occupy their own row rather than stretching a short neighbor. */
+.modal.compact-kol .v4profileeditor>.fieldgrid>.field:has(#v4-market),.modal.compact-kol .v4profileeditor>.fieldgrid>.field:has(#v4-competitors),.modal.compact-kol .v4profileeditor>.fieldgrid>.field:has(#v4-overview){grid-column:1/-1}
+.modal.compact-kol .field:has(#v4-market){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:10px}
+.modal.compact-kol .field:has(#v4-market)>label,.modal.compact-kol .field:has(#v4-market)>small{grid-column:1/-1}
+.modal.compact-kol .field .marketsearch{margin-bottom:0}
+.modal.compact-kol#newform #profilefields textarea{min-height:38px!important}
+.modal.compact-kol>.choicefield:has([name=products]){margin-bottom:0}
+.modal.compact-kol .v4profileeditor{margin-top:12px;padding-top:8px;border-top:1px solid var(--line)}
+.modal.compact-kol .v4profileeditor>.formtitle{margin:0 0 10px;padding:0;border:0}
+.modal.compact-kol #v4-emails{min-height:74px}
+.modal.compact-kol #dupresult{margin-top:10px}
+.modal.compact-publication#v4form .compact-publication-owner{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.modal.compact-publication .caseeditor{margin:14px 0 0;border-top:1px solid var(--line);padding-top:12px}
+.modal.compact-publication .caseeditor summary{font-size:13px;line-height:21px;margin-bottom:10px}
+.modal.compact-fee .delivery-input{padding:12px;margin:0 0 10px;border-radius:7px}
+.modal.compact-fee#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:minmax(130px,1.2fr) minmax(95px,.8fr) minmax(100px,1fr);gap:10px;margin:0}
+.modal.compact-fee #adddelivery{min-height:32px;font-size:13px;line-height:20px;padding:5px 0}
+@media(max-width:620px){.modal.compact-form:is(#newform,#v4form,#v7form){max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:18px}.modal.compact-form>.modalheading{top:-18px;margin:-18px -18px 12px;padding:14px 18px 11px}.modal.compact-form>.actions{bottom:-18px;margin:14px -18px -18px;padding:10px 18px}.modal.compact-fee#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:repeat(2,minmax(0,1fr))}.modal.compact-fee#v7form .delivery-schedule>.field:last-child{grid-column:1/-1}}
+@media(max-width:440px){.modal.compact-form:is(#newform,#v4form,#v7form) .fieldgrid,.modal.compact-kol .field:has(#v4-market){grid-template-columns:1fr}.modal.compact-form>.modalheading h2{font-size:18px;line-height:26px}.modal.compact-kol .field .marketsearch{margin-bottom:6px}.modal.compact-fee#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:1fr}.modal.compact-fee#v7form .delivery-schedule>.field:last-child{grid-column:auto}.modal.compact-form>.actions{gap:7px}}
+/* Selected fee application reference: self-contained scrolling body and fixed actions. */
+.modal.compact-fee.fee-reference-form#v7form{width:760px;padding:0;display:flex;flex-direction:column;overflow:hidden;max-height:calc(100dvh - 48px);border:1px solid var(--line);box-shadow:0 20px 70px #182b4b26}
+.modal.fee-reference-form>.modalheading{position:static;flex:none;margin:0;padding:17px 24px 15px;background:white;border-bottom:1px solid var(--line)}
+.modal.fee-reference-form>.modalheading h2{font-size:20px;line-height:28px;font-weight:650}
+.fee-reference-form .fee-form-scroll{overflow:auto;overscroll-behavior:contain;padding:19px 24px 20px;min-height:0;scroll-padding:12px}
+.fee-reference-form .fee-section-title{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-size:16px;line-height:24px;font-weight:650}
+.fee-reference-form .fee-section-title:before{content:'';width:4px;height:19px;flex:none;border-radius:3px;background:var(--blue)}
+.modal.fee-reference-form#v7form .fieldgrid{gap:14px 22px;margin-bottom:14px}
+.modal.fee-reference-form#v7form .field label{font-size:13px;line-height:20px;font-weight:500;color:var(--ink);margin-bottom:5px}
+.fee-reference-form .fee-required{color:#bd304b;margin-left:2px;font-weight:500}
+.modal.fee-reference-form#v7form .field input,.modal.fee-reference-form#v7form .field select{border-radius:5px;background:#fff}
+.modal.fee-reference-form#v7form .fee-amount{max-width:410px}
+.modal.fee-reference-form#v7form .fee-reason-field{position:relative;margin:0}
+.modal.fee-reference-form#v7form .fee-reason-field textarea{display:block;min-height:84px;padding:9px 12px 25px;border-radius:5px;background:#f5f6f8;color:var(--ink)}
+.modal.fee-reference-form#v7form .fee-reason-field textarea::placeholder{color:#7b8798;opacity:1}
+.fee-reference-form .fee-character-count{position:absolute;right:11px;bottom:7px;font-size:12px;line-height:17px;color:var(--muted);pointer-events:none;background:#f5f6f8;padding-left:5px}
+.fee-reference-form .fee-delivery-section{margin-top:25px}
+.modal.fee-reference-form#v7form .delivery-input{padding:0;margin:0 0 12px;overflow:hidden;border-radius:7px;background:white}
+.fee-reference-form .fee-delivery-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:38px;padding:3px 12px;background:var(--tint);border-bottom:1px solid var(--line)}
+.fee-reference-form .fee-delivery-heading strong{font-size:14px;line-height:22px;font-weight:600}
+.fee-reference-form .fee-delivery-heading .iconbtn{width:32px;height:32px;padding:8px;color:var(--muted)}
+.fee-reference-form .fee-delivery-heading .iconbtn svg{width:16px;height:16px}
+.fee-reference-form .fee-delivery-heading .iconbtn:disabled{opacity:.4}
+.fee-reference-form .fee-delivery-body{padding:12px 16px 16px}
+.modal.fee-reference-form#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:minmax(140px,1fr) minmax(110px,1fr) minmax(110px,1fr);gap:16px;margin:0}
+.modal.fee-reference-form#v7form #adddelivery{display:block;width:100%;min-height:38px;border:1px dashed var(--accent-border);border-radius:6px;background:var(--tint);color:var(--blue);font-size:14px;line-height:22px;padding:7px 12px}
+.fee-reference-form #adddelivery:hover{border-color:var(--blue)}
+.fee-reference-form .fee-supplement{margin-top:15px;border:1px solid var(--line);background:var(--tint);border-radius:6px}
+.fee-reference-form .fee-supplement summary{display:flex;align-items:center;gap:4px;cursor:pointer;list-style:none;padding:11px 15px;font-size:13px;line-height:20px;font-weight:600}
+.fee-reference-form .fee-supplement summary::-webkit-details-marker{display:none}
+.fee-reference-form .fee-supplement summary span{font-weight:400}
+.fee-reference-form .fee-supplement summary svg{width:16px;height:16px;margin-left:auto;transition:transform .15s}
+.fee-reference-form .fee-supplement[open] summary svg{transform:rotate(90deg)}
+.fee-reference-form .fee-supplement p{font-size:12px;line-height:20px;color:var(--muted);margin:0;padding:0 15px 12px}
+.modal.fee-reference-form#v7form>.actions{position:static;flex:none;margin:0;padding:13px 24px;gap:10px;background:white;border-top:1px solid var(--line);box-shadow:0 -3px 12px #182b4b04}
+.modal.fee-reference-form#v7form>.actions .btn{min-width:88px;height:38px;padding:8px 16px}
+.fee-reference-form :is(button,summary):focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(max-width:620px){.modal.compact-fee.fee-reference-form#v7form{max-height:calc(100dvh - 24px)}.modal.fee-reference-form>.modalheading{padding:13px 16px}.fee-reference-form .fee-form-scroll{padding:16px}.modal.fee-reference-form#v7form>.actions{padding:12px 16px;gap:8px}.modal.fee-reference-form#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.modal.fee-reference-form#v7form .fee-amount{max-width:none}}
+@media(max-width:440px){.modal.fee-reference-form#v7form .fieldgrid,.modal.fee-reference-form#v7form .delivery-input .fieldgrid.delivery-schedule{grid-template-columns:1fr}.modal.fee-reference-form#v7form>.actions .btn{min-width:0;padding:7px 10px}.fee-reference-form .fee-delivery-body{padding:12px}}
+/* Second comparison pass: reference-sized reason area, visible close icon, neutral tinted grouping. */
+.modal.fee-reference-form#v7form .fee-reason-field textarea{height:84px;min-height:84px}
+.modal.fee-reference-form>.modalheading .iconbtn svg{width:18px;height:18px}
+.fee-reference-form .fee-delivery-heading,.fee-reference-form .fee-supplement{background:color-mix(in srgb,var(--tint) 35%,#f8f9fb)}
+.modal.fee-reference-form#v7form #adddelivery{background:color-mix(in srgb,var(--tint) 40%,white);border-color:color-mix(in srgb,var(--blue) 30%,white)}
+.modal.fee-reference-form#v7form :is(input,select,textarea){border-color:#d7deea}
+.modal.fee-reference-form#v7form :is(input,select,textarea):focus{border-color:var(--blue)}

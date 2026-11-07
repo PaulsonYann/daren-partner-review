@@ -1,0 +1,32 @@
+/* Refresh only dictionary metadata; never replace a working draft or its input nodes. */
+const v11ManagedBusinessOptionKeys=['type','competitors','blocker'];
+let v11BusinessDictionary=null;
+function v11BusinessOptionInactive(key,value){return v11ManagedBusinessOptionKeys.includes(key)&&!!value&&!opts(key).includes(value)}
+function v11BusinessDictionaryAvailable(){return typeof currentUser!=='undefined'&&!!currentUser&&currentUser.passwordChangeRequired!==true&&!v11DedicatedAdminPath()&&Number.isSafeInteger(store.optionsVersion)&&store.optionsVersion>=0}
+function v11BusinessDictionaryCurrent(state){return state===v11BusinessDictionary&&!state.dead&&state.user===currentUser&&v11BusinessDictionaryAvailable()}
+function v11BusinessDictionaryReset(){if(v11BusinessDictionary){v11BusinessDictionary.dead=true;v11BusinessDictionary.serial++;}v11BusinessDictionary=null;document.querySelectorAll('.v11-business-options-notice').forEach(node=>node.remove())}
+function v11BusinessDictionaryState(){if(v11BusinessDictionary?.user!==currentUser)v11BusinessDictionaryReset();if(!v11BusinessDictionary)v11BusinessDictionary={user:currentUser,serial:0,dead:false,pending:null,status:'idle',error:'',loadedAt:0,syncPending:false};return v11BusinessDictionary}
+function v11BusinessDictionaryDTO(data){
+ const keys=Object.keys(optionLabels);if(!data||!Number.isSafeInteger(data.version)||data.version<0||!data.options||Object.keys(data.options).length!==keys.length||keys.some(key=>!Array.isArray(data.options[key])||data.options[key].some(value=>typeof value!=='string'||!value.trim())||new Set(data.options[key]).size!==data.options[key].length)||!data.disabledOptions||Object.keys(data.disabledOptions).length!==3||v11ManagedBusinessOptionKeys.some(key=>!Array.isArray(data.disabledOptions[key])||data.disabledOptions[key].some(value=>typeof value!=='string'||data.options[key].includes(value))))throw Error('业务选项返回异常，请重试读取');return data;
+}
+function v11BusinessDictionaryNotice(state){
+ document.querySelectorAll('.v11-business-options-notice').forEach(node=>node.remove());if(!v11BusinessDictionaryCurrent(state)||state.status!=='error')return;const host=document.querySelector('#inlineprofile')||document.querySelector('#newform')||document.querySelector('#content');if(!host)return;const notice=document.createElement('div');notice.className='v11-business-options-notice';notice.setAttribute('role','status');const text=document.createElement('span');text.textContent='选项刷新失败，已保留当前输入。';const retry=document.createElement('button');retry.type='button';retry.dataset.businessOptionsRetry='';retry.textContent='重试选项';retry.onclick=()=>v11RefreshBusinessOptions(true);notice.append(text,retry);host.prepend(notice);
+}
+function v11BusinessDictionarySync(state){
+ if(!v11BusinessDictionaryCurrent(state))return;const forms=[document.querySelector('#inlineprofile'),document.querySelector('#newform')].filter(Boolean),composing=forms.some(form=>typeof profileInputComposing==='function'&&form.id==='inlineprofile'&&profileInputComposing(form)||form.v11BusinessOptionsComposing===true);
+ if(composing){state.syncPending=true;return}state.syncPending=false;
+ if(v10OpenChoice?.control?.dataset.v10Choice==='competitors')closeV10Choice(false);
+ for(const form of forms)syncV10OptionControls(form,v11ManagedBusinessOptionKeys);v11BusinessDictionaryNotice(state);
+}
+async function v11RefreshBusinessOptions(force=false){
+ if(!v11BusinessDictionaryAvailable())return false;const state=v11BusinessDictionaryState();if(state.pending)return state.pending;if(!force&&Date.now()-state.loadedAt<15000)return true;const serial=++state.serial;state.status='loading';
+ const pending=(async()=>{try{const data=v11BusinessDictionaryDTO(await api('/api/business-options'));if(!v11BusinessDictionaryCurrent(state)||serial!==state.serial)return false;const changed=data.version>store.optionsVersion;if(data.version>=store.optionsVersion){store.options=data.options;store.optionsVersion=data.version;store.disabledOptions=data.disabledOptions;}state.loadedAt=Date.now();state.status='ready';state.error='';if(changed||state.syncPending)v11BusinessDictionarySync(state);else v11BusinessDictionaryNotice(state);return true}catch(error){if(!v11BusinessDictionaryCurrent(state)||serial!==state.serial)return false;state.status='error';state.error=error.message||'业务选项刷新失败';v11BusinessDictionaryNotice(state);return false}finally{if(v11BusinessDictionaryCurrent(state)&&serial===state.serial)state.pending=null}})();state.pending=pending;return pending;
+}
+document.addEventListener('compositionstart',event=>{const form=event.target.closest?.('#inlineprofile,#newform');if(form)form.v11BusinessOptionsComposing=true},true);
+document.addEventListener('compositionend',event=>{const form=event.target.closest?.('#inlineprofile,#newform');if(form){form.v11BusinessOptionsComposing=false;Promise.resolve().then(()=>{const state=v11BusinessDictionary;if(state?.syncPending)v11BusinessDictionarySync(state)})}},true);
+document.addEventListener('click',event=>{if(event.target.closest?.('[data-editfield="type"],[data-editfield="competitors"],[data-editfield="blocker"],[data-v10-choice="competitors"],#v4-type,#v4-blocker'))void v11RefreshBusinessOptions(true)},true);
+const v11BusinessDictionaryPreviousRender=render;render=function(...args){const result=v11BusinessDictionaryPreviousRender.apply(this,args);if(v11BusinessDictionaryAvailable())void v11RefreshBusinessOptions();else if(v11BusinessDictionary)v11BusinessDictionaryReset();return result};
+const v11BusinessDictionaryPreviousNew=newKOL;newKOL=function(...args){const result=v11BusinessDictionaryPreviousNew.apply(this,args);if(v11BusinessDictionaryAvailable())void v11RefreshBusinessOptions(true);return result};
+const v11BusinessDictionaryPreviousProfile=renderInlineProfile;renderInlineProfile=function(...args){const result=v11BusinessDictionaryPreviousProfile.apply(this,args);if(v11BusinessDictionaryAvailable())void v11RefreshBusinessOptions(true);return result};
+const v11BusinessDictionaryPreviousReset=v11AdminReset;v11AdminReset=function(){if(v11BusinessDictionary?.user!==currentUser||!v11BusinessDictionaryAvailable())v11BusinessDictionaryReset();return v11BusinessDictionaryPreviousReset()};
+window.addEventListener('focus',()=>{if(v11BusinessDictionaryAvailable())void v11RefreshBusinessOptions(true)});document.addEventListener('visibilitychange',()=>{if(!document.hidden&&v11BusinessDictionaryAvailable())void v11RefreshBusinessOptions(true)});window.addEventListener('pagehide',v11BusinessDictionaryReset);

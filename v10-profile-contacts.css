@@ -1,0 +1,21 @@
+.v10-kol-drawer .v10-email-backing{display:none!important}
+.v10-kol-drawer .v10-email-fields{grid-column:1/-1;min-width:0;margin:0 0 12px}
+.v10-kol-drawer .v10-email-fields>.v8field{display:grid;grid-template-columns:125px minmax(0,1fr);gap:10px;align-items:center;position:relative;border:0;padding:6px 30px 6px 0;margin:0;min-height:38px}
+.v10-kol-drawer .v10-email-fields .v8fieldhead{margin:0;padding:0;position:static;min-width:0}
+.v10-kol-drawer .v10-email-fields label{font-size:12px;line-height:20px;font-weight:400;color:var(--v9muted)}
+.v10-kol-drawer .v10-email-fields .v8pen{position:absolute;right:0;top:9px}
+.v10-kol-drawer .v10-email-fields .v8display{display:flex;align-items:center;gap:7px;padding:0;min-width:0;min-height:28px;font-size:14px;line-height:22px;overflow-wrap:anywhere}
+.v10-kol-drawer .v10-email-fields .v8display[hidden]{display:none}
+.v10-kol-drawer .v10-email-fields .v8display>.iconbtn{flex:0 0 26px;width:26px;height:26px;margin-left:auto}
+.v10-kol-drawer .v10-email-address{min-width:0;overflow-wrap:anywhere}
+.v10-kol-drawer .v10-email-shared{font-size:11px;color:var(--v9muted);white-space:nowrap}
+.v10-kol-drawer .v10-email-fields .v8editor input{width:100%;height:34px;min-height:34px;font-size:13px;padding:6px 9px}
+.v10-kol-drawer .v9profile-section>.v10-four-contacts{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:12px}
+.v10-kol-drawer .v10-four-contacts>.v10-contact{display:flex;align-items:center;grid-column:auto;min-width:0;padding:6px 56px 6px 40px;border:0!important}
+.v10-kol-drawer .v10-four-contacts .v10-contact>.v8display{display:flex;align-items:center;flex:1;min-width:0;line-height:21px}
+.v10-kol-drawer .v10-four-contacts .v10-contact>.v8editor{flex:1;min-width:0}
+.v10-kol-drawer .v10-four-contacts .v10-contact-icon{width:32px;height:32px;min-height:32px;flex-basis:32px}
+.v10-kol-drawer .v10-four-contacts .v10-contact-icon svg{display:block;width:32px;height:32px}
+.v10-kol-drawer .v10-phone-icon svg,.v10-kol-drawer .v10-phone-icon svg>*{stroke:none}
+@media(max-width:1100px){.v10-kol-drawer .v9profile-section>.v10-four-contacts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.v10-kol-drawer .v10-email-fields>.v8field{grid-template-columns:1fr;gap:2px}.v10-kol-drawer .v9profile-section>.v10-four-contacts{grid-template-columns:1fr}}

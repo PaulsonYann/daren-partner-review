@@ -1,0 +1,45 @@
+/* Scoped additions keep the wide cooperation detail and original source forms aligned. */
+.v10-cooperation-record-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px;min-width:0}
+.v10-detail-publication>.v10-cooperation-record-actions{margin-top:0;flex:0 0 auto;align-self:center}
+.v10-cooperation-operation-error{font-size:13px;line-height:21px;color:#b5423b;background:#fff1ef;border:1px solid #efcdc8;border-radius:6px;padding:10px 12px;margin:0 0 16px;overflow-wrap:anywhere}
+.v10-cooperation-operation-error .btn{margin-left:8px}
+.v10-cooperation-business-form{font-size:13px;line-height:20px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);min-width:0;overflow-y:auto}
+.v10-cooperation-business-form .modalheading h2{font-size:20px;line-height:28px;overflow-wrap:anywhere}
+.v10-cooperation-business-form .v10-cooperation-child-context{font-size:12px;line-height:20px;color:#71839b;margin:0 0 14px;overflow-wrap:anywhere}
+.v10-cooperation-business-form label,.v10-cooperation-business-form input,.v10-cooperation-business-form select,.v10-cooperation-business-form textarea,.v10-cooperation-business-form .btn{font-size:13px;line-height:20px}
+.v10-cooperation-business-form .btn{min-height:36px;padding:7px 12px;display:inline-flex;justify-content:center;align-items:center;gap:6px}
+.v10-cooperation-business-form .btn svg,.v10-cooperation-business-form .iconbtn svg{width:18px;height:18px}
+.v10-cooperation-business-form input:not([type=checkbox]):not([type=radio]),.v10-cooperation-business-form select{min-height:36px;height:36px}
+.v10-cooperation-business-form [disabled]{opacity:.65}
+.v10-cooperation-business-form [hidden]{display:none!important}
+.v10-cooperation-business-form .v10-cooperation-child-feedback{margin:8px 0;min-width:0}
+.v10-cooperation-child-feedback .inlinecheck{margin:0;font-size:12px;line-height:20px;overflow-wrap:anywhere}
+.v10-cooperation-child-feedback .textbtn{font-size:13px;line-height:20px;min-height:32px;padding:6px 0}
+.v10-cooperation-business-form .publication-choice{display:flex;align-items:flex-start;gap:9px;border:1px solid #dee6f0;border-radius:6px;padding:10px;margin:8px 0;overflow-wrap:anywhere}
+.v10-cooperation-business-form .publication-choice input{margin-top:3px;flex-shrink:0}
+.v10-cooperation-business-form :is(button,a,input,select,textarea):focus-visible{outline:2px solid #0756ed;outline-offset:2px}
+.leaveprompt.v10-cooperation-action-leave{z-index:100}
+.v10-cooperation-action-leave .modal{max-width:calc(100vw - 32px);box-sizing:border-box;font-size:13px;line-height:21px}
+.v10-cooperation-action-leave h2{font-size:18px;line-height:26px}
+.v10-cooperation-action-leave .btn{font-size:13px;line-height:20px;min-height:36px;padding:7px 12px}
+@media(max-width:600px){
+ .v10-detail-publication{flex-wrap:wrap}.v10-detail-publication>.v10-cooperation-record-actions{box-sizing:border-box;flex:1 0 100%;width:100%;margin-top:8px;padding-left:42px}
+ .v10-cooperation-business-form{max-width:calc(100vw - 20px);max-height:calc(100dvh - 20px);padding:16px}
+ .v10-cooperation-business-form .fieldgrid{grid-template-columns:minmax(0,1fr)}
+ .v10-cooperation-business-form .actions{flex-wrap:wrap;gap:8px}.v10-cooperation-business-form .actions>.inlinecheck{flex-basis:100%}
+ .v10-cooperation-action-leave .actions{flex-wrap:wrap;gap:8px}.v10-cooperation-action-leave .actions .btn{flex:1 0 auto}
+}
+
+/* Empty validation placeholders must not create a second blank footer above the actions. */
+.v10-cooperation-business-form :is(#v7error,#v4error,#cooperationactionerror):empty{display:none}
+.v10-cooperation-business-form .v10-cooperation-child-feedback:has(#cooperationactionerror:empty):has([data-cooperation-action-reload][hidden]){display:none}
+
+/* Scoped transport feedback supersedes the original editor transport message. */
+.v10-cooperation-business-form:has(#cooperationactionerror:not(:empty)) :is(#v7error,#v4error){display:none}
+/* The fee editor has zero outer padding; align its cooperation context with its own header/body. */
+.v10-cooperation-business-form.fee-reference-form>.v10-cooperation-child-context{box-sizing:border-box;flex:none;padding-inline:24px}
+@media(max-width:620px){.v10-cooperation-business-form.fee-reference-form>.v10-cooperation-child-context{padding-inline:16px}}
+
+/* Match fee validation feedback to the same inset as its header, body and context. */
+.v10-cooperation-business-form.fee-reference-form>.v10-cooperation-child-feedback{box-sizing:border-box;padding-inline:24px}
+@media(max-width:620px){.v10-cooperation-business-form.fee-reference-form>.v10-cooperation-child-feedback{padding-inline:16px}}
